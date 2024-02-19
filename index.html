@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -9,6 +9,87 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- ADD YOUR CODE HERE -->
-  </body>
+    <header>
+        <h1>Welcome to PlayZone Internet Cafe</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to PlayZone Internet Cafe, your ultimate destination for gaming entertainment. We provide high-speed internet access and top-of-the-line gaming equipment to ensure an unparalleled gaming experience for our customers.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>At PlayZone Internet Cafe, we offer a range of services to cater to all your gaming needs:</p>
+        <ul>
+            <li>High-speed internet access</li>
+            <li>State-of-the-art gaming PCs</li>
+            <li>Wide selection of popular multiplayer games</li>
+            <li>Comfortable gaming environment</li>
+            <li>Snacks and refreshments</li>
+        </ul>
+    </section>
+
+    <section id="prices">
+        <h2>Prices</h2>
+        <div class="price-options">
+            <button onclick="showPrices('hour')">1 Hour</button>
+            <button onclick="showPrices('night-weekdays')">1 Full Night (Weekdays)</button>
+            <button onclick="showPrices('night-weekends')">1 Full Night (Weekends)</button>
+        </div>
+        <div class="price-details" id="price-hour">
+            <h3>PC Prices:</h3>
+            <p>1 Hour: $10</p>
+            <p>PS4 Prices: 1 Hour: $12</p>
+        </div>
+        <div class="price-details" id="price-night-weekdays" style="display:none;">
+            <h3>PC Prices:</h3>
+            <p>1 Full Night (Weekdays): $50</p>
+            <h3>PS4 Prices:</h3>
+            <p>1 Full Night (Weekdays): $55</p>
+        </div>
+        <div class="price-details" id="price-night-weekends" style="display:none;">
+            <h3>PC Prices:</h3>
+            <p>1 Full Night (Weekends): $60</p>
+            <h3>PS4 Prices:</h3>
+            <p>1 Full Night (Weekends): $65</p>
+        </div>
+    </section>
+
+    <section id="location">
+      <h2>Location</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22078.041644504548!2d28.844056250951406!3d47.02498484228749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cfd0d18111c2dd%3A0x3e8e286421ad83fc!2sChisinau%2C%20Moldova!5e0!3m2!1sen!2sin!4v1645303013840!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Fill out the form below and we'll get back to you:</p>
+      <form action="/submit_contact_form" method="post">
+        <label for="contact-info">Phone Number or Email Address:</label>
+        <input type="text" id="contact-info" name="contact-info" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 PlayZone Internet Cafe. All rights reserved.</p>
+    </footer>
+    <script>
+        function showPrices(option) {
+            document.querySelectorAll('.price-details').forEach(function(el) {
+                el.style.display = 'none';
+            });
+
+            document.getElementById('price-' + option).style.display = 'block';
+        }
+    </script>
+</body>
 </html>
