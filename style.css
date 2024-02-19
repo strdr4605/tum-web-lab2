@@ -1,1 +1,52 @@
 /* add your CSS here */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.scrollable {
+    max-height: 300px; /* Adjust the max-height as needed */
+    overflow-y: auto;
+    width: 80%; /* Adjust the width as needed */
+    background-color: white; /* Background color for the scrollable container */
+    padding: 20px; /* Add padding inside the container as needed */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+}
+  
+h1 {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+#buy
+div {
+    position: relative;
+    left: 200px;
+    top: 200px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+#buy_our_membership
+p {
+    position: relative;
+    top: 25px;
+    left: 0px;
+    width: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+}
+
+
