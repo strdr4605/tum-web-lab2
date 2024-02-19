@@ -14,7 +14,7 @@ Create a web page for your/friends/relatives business (example: car-rent, cookie
 - Use vanilla CSS and HTML (no frameworks)
 - Have a decent git history (no one commit)
 - The page should be deployed on a free hosting service (example: GitHub Pages, Vercel, Netlify)
-- Project repo should have a README with a short description of the landing page topic landing page, screenshots, and a link to the live demo
+- Project repo should have a README with a short description of the landing page topic, screenshots, and a link to the live demo
 
 ## Other requirements:
 
