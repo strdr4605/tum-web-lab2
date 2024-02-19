@@ -1,14 +1,42 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ADD YOUR CODE HERE -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CropScout</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="container">
+  <section class="grid grid-cols-12">
+    <header class="col-span-6 header flex flex-col gap-3">
+      <div class="flex justify-between items-center gap-3">
+        <div class="flex items-center gap-1 logo-container">
+          <img src="assets/icon.svg" alt="Drone"/>
+          <span class="bold">CropScout</span>
+        </div>
+        <div class="flex justify-center items-center gap-1 nav-links">
+          <a href="#feature">Feature</a>
+          <a href="#service">Service</a>
+          <a href="#review">Review</a>
+          <a href="#location">Location</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2">
+        <h1 class="text-76 text-secondary">
+          Scout and analyse <span id="crops" class="text-primary underline">crops</span> your effortlessly
+        </h1>
+        <p class="text-16 text-comet">
+          Designed to give farmers, agronomists, and agricultural professionals an unparalleled view of their fields, enabling precise monitoring and management of crops at any scale. Our state-of-the-art drones are equipped with high-resolution cameras and sensors that capture detailed images and data across vast agricultural landscapes.
+        </p>
+        <a href="#" class="cta-button p-1 text-white bg-primary bold">Start now →</a>
+      </div>
+    </header>
+    <div class="col-span-6 relative">
+      <img src="assets/cover.png" alt="Cover Image" class="absolute position-cover"/>
+    </div>
+  </section>
+</main>
+</body>
 </html>

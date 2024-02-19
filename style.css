@@ -1,1 +1,168 @@
-/* add your CSS here */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #D7D6C5;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.col-span-6 {
+    grid-column: span 6 / span 6;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.main-tagline {
+    font-size: 3em;
+    color: #181E4B;
+    margin: 20px 0;
+}
+
+.text-76 {
+    font-size: 76px;
+    line-height: 89px;
+}
+
+.text-16 {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.text-primary {
+    color: #4475F2;
+}
+
+.bg-primary {
+    background-color: #4475F2;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-comet {
+    color: #5E6282;
+}
+
+.text-secondary {
+    color: #181E4B;
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 20%;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.image-container {
+    background: url('assets/cover.png') no-repeat center center;
+    background-size: cover;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.position-cover {
+    top: -10%;
+    left: 10%;
+}
