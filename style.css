@@ -1,1 +1,101 @@
-/* add your CSS here */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+main {
+    position: relative;
+}
+
+.blog-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
+    display: none;
+}
+
+.blog-section img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #555;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    background-color: #333;
+}
+
+nav label {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav label:hover {
+    background-color: #555;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#tab1:checked ~ #about,
+#tab2:checked ~ #recensions,
+#tab3:checked ~ #contacts,
+#tab4:checked ~ #pictures {
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

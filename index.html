@@ -1,14 +1,61 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ADD YOUR CODE HERE -->
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Welcome to our Simple Blog</h1>
+        </div>
+    </header>
+
+    <main>
+        <input type="radio" name="tab" id="tab1" checked>
+        <section id="about" class="blog-section">
+            <h2>About</h2>
+            <p>This section is dedicated to providing information about our blog.</p>
+            <img src="about.jpg" alt="About Image">
+            <a href="#" class="cta-btn">Learn More</a>
+        </section>
+
+        <input type="radio" name="tab" id="tab2">
+        <section id="recensions" class="blog-section">
+            <h2>Recensions</h2>
+            <p>This section contains reviews and recommendations.</p>
+            <img src="recensions.jpg" alt="Recensions Image">
+            <a href="#" class="cta-btn">Read Reviews</a>
+        </section>
+
+        <input type="radio" name="tab" id="tab3">
+        <section id="contacts" class="blog-section">
+            <h2>Contacts</h2>
+            <p>Get in touch with us via the following contact information.</p>
+            <img src="contacts.jpg" alt="Contacts Image">
+            <a href="#" class="cta-btn">Contact Us</a>
+        </section>
+
+        <input type="radio" name="tab" id="tab4">
+        <section id="pictures" class="blog-section">
+            <h2>Pictures</h2>
+            <p>Explore captivating images from our blog.</p>
+            <img src="pictures.jpg" alt="Pictures Image">
+            <a href="#" class="cta-btn">View Pictures</a>
+        </section>
+
+        <nav>
+            <label for="tab1">About</label>
+            <label for="tab2">Recensions</label>
+            <label for="tab3">Contacts</label>
+            <label for="tab4">Pictures</label>
+        </nav>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simple Blog. All rights reserved.</p>
+    </footer>
+</body>
 </html>
