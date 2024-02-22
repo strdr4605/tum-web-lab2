@@ -117,3 +117,35 @@ h1 {
 .hero-img {
   scale: 90%;
 }
+
+.hero-headline {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  font-style: normal;
+  color: #545be8;
+}
+
+.hero-headline .bold {
+  font-weight: 700;
+}
+
+.hero-subline {
+  font-weight: 700;
+  font-size: 64px;
+  font-style: normal;
+  color: #141e32;
+  line-height: 90px;
+}
+
+.hero-subline .blue {
+  color: #545be8;
+}
+
+.hero-decription {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 30px;
+  color: #969696;
+}
