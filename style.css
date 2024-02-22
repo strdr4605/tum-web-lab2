@@ -1,1 +1,31 @@
 /* add your CSS here */
+p,
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.brand-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  color: #545be8;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 90px;
+  padding-right: 90px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
