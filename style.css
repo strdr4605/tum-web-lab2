@@ -155,3 +155,20 @@ h1 {
   flex-direction: row;
   gap: 50px;
 }
+
+.play-video-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.play-video-box p {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  color: #141e32;
+}
