@@ -149,3 +149,9 @@ h1 {
   line-height: 30px;
   color: #969696;
 }
+
+.hero-call-to-action {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
