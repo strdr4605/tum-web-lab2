@@ -1,131 +1,37 @@
-/* style.css */
-
-/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    font-family: "Arial", sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    height: 65px;
+    line-height: 65px;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_link{
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 20px;
-    text-align: center;
+    font-weight: 400;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.nav_link:hover{
+    border-bottom: 8px solid white;
+
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Section Styles */
-#about,
-#services,
-#prices,
-#contact {
-    background-color: #f4f4f4;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Heading Styles */
-h1, h2 {
-    margin-top: 0;
-}
-
-/* Link Styles */
 a {
-    color: #007bff;
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Price Options Styles */
-.price-options {
-    margin-bottom: 10px;
-}
-
-.price-options button {
-    padding: 10px 20px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-}
-
-.price-options button:hover {
-    background-color: #0056b3;
-}
-
-/* Price Details Styles */
-.price-details {
-    display: none;
-}
-
-.price-details h3 {
-    margin-top: 0;
-}
-
-.price-details p {
-    margin: 5px 0;
-}
-
-/* Footer Styles */
-footer p {
-    margin: 0;
-}
-
-/* Social Media Icons Styles */
-.social-media {
-    list-style: none;
-    padding: 0;
-}
-
-.social-media li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.social-media li img {
-    width: 30px;
-    height: 30px;
-    opacity: 0.7;
-}
-
-.social-media li img:hover {
-    opacity: 1;
+    color: inherit;
 }
