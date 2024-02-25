@@ -305,3 +305,81 @@ a {
 .barber-name{
     font-size: 26px;
 }
+
+#Contacts{
+    position: relative;
+    background-color: black;
+    height: 600px;
+}
+
+.wrapper{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.button-wrapper{
+    position: absolute;
+    padding-top: 30px;
+    left: 25%;
+    width: 770px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    background-color: inherit;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+}
+
+.phone{
+    background-color: inherit;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+}
+
+.mail{
+    background-color: inherit;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+}
+
+.comment{
+    background-color: inherit;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    height: 150px;
+    font-size: 16px;
+}
+
+.submit{
+    border: none;
+    outline: none;
+    background-color: rgb(203, 155, 44, 1);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    height: 40px;
+}
+
+.submit:hover{
+    border: none;
+    outline: none;
+    background-color:  rgba(23,24,25,255);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    height: 40px;
+    cursor: pointer;
+}
