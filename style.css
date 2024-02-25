@@ -244,3 +244,64 @@ a {
 .column .service:last-child .cut-desc::after {
     display: none;
 }
+
+#Team{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.heading-text{
+    color: white;
+    font-size: 35px;
+}
+
+.team-images{
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.profile{
+    position: relative;
+}
+
+.profile-image{
+    width: 370px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+.barber{
+    position: absolute;
+    bottom: 55px;
+    left: 50%; /* Set left to 50% */
+    transform: translateX(-50%);
+    color: white;
+}
+
+.type{
+
+    font-size: 12px;
+}
+
+.barber-name{
+    font-size: 26px;
+}
