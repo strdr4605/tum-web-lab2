@@ -181,3 +181,61 @@ a {
     font-size: 17px;
     margin-bottom: 30px;
 }
+
+#Services{
+    position: relative;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(32, 32, 32);
+}
+
+.column{
+    width: 370px;
+    margin-right: 25px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+} 
+
+.barber-type{
+    color: rgb(203, 155, 44, 1);
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.column-header{
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 22px;
+    padding-bottom: 40px;
+}
+
+.cut-type{
+    position: absolute;
+    color: white;
+}
+
+.price{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+}
+
+.cut-desc{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    width: 200px;
+    line-height: 1.5;
+    margin-bottom: 31px;
+}
+
+.cut-desc::after {
+    content: '';
+    display: block;
+    width: 370px;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.5);
+    margin-top: 25px; 
+    margin-bottom: 10px;

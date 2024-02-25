@@ -7,6 +7,25 @@
     <!-- CHANGE THESE VALUES -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <script>
+      window.onload = () => {
+        let arr = []
+        for(let i = 1; i < 4; i++){
+          arr.push(document.getElementById('c' + i.toString()))
+        }
+        
+        for(let i = 0; i < 3; i++){
+          arr[i].addEventListener('mouseover', () => {
+            arr[(i + 1) % 3].style.opacity = 0.5;
+            arr[(i + 2) % 3].style.opacity = 0.5;
+          });
+          arr[i].addEventListener('mouseout', () => {
+            arr[(i + 1) % 3].style.opacity = 1;
+            arr[(i + 2) % 3].style.opacity = 1;
+          });
+        }
+      };
+    </script>
   </head>
   <body>
     <header>
@@ -55,7 +74,135 @@
       </div>
       </section>
       <section id="Services">
-        
+        <div class="column" id="c1">
+          <div class="service">
+              <div class="barber-type">Barber</div>
+              <div class="column-header">
+                  <div class="cut-type">Haircut</div>
+                  <div class="price">200 lei</div>
+              </div>
+              <div class="cut-desc">Haircut includes hair washing and final styling</div>
+          </div>
+      
+          <div class="service">
+              <div class="column-header">
+                  <div class="cut-type">Classic Haircut</div>
+                  <div class="price">250 lei</div>
+              </div>
+              <div class="cut-desc">Haircut performed with scissors only</div>
+          </div>
+      
+          <div class="service">
+              <div class="column-header">
+                  <div class="cut-type">Beard Shaping</div>
+                  <div class="price">150 lei</div>
+              </div>
+              <div class="cut-desc">Shaping, outlining, and styling of the beard</div>
+          </div>
+      
+          <div class="service">
+              <div class="column-header">
+                  <div class="cut-type">Complex</div>
+                  <div class="price">350 lei</div>
+              </div>
+              <div class="cut-desc">Complex includes men's haircut and beard shaping</div>
+          </div>
+      
+          <div class="service">
+              <div class="column-header">
+                  <div class="cut-type">Gold Complex</div>
+                  <div class="price">400 lei</div>
+              </div>
+              <div class="cut-desc">Gold Complex includes haircut, beard shaping, and eyebrow shaping</div>
+          </div>
+      </div>
+      
+      <div class="column" id="c2">
+        <div class="service">
+            <div class="barber-type">Barber PRO</div>
+            <div class="column-header">
+                <div class="cut-type">Haircut</div>
+                <div class="price">250 lei</div>
+            </div>
+            <div class="cut-desc">Haircut includes hair washing and final styling</div>
+        </div>
+    
+        <div class="service">
+            <div class="column-header">
+                <div class="cut-type">Classic Haircut</div>
+                <div class="price">300 lei</div>
+            </div>
+            <div class="cut-desc">Haircut performed with scissors only</div>
+        </div>
+    
+        <div class="service">
+            <div class="column-header">
+                <div class="cut-type">Beard Shaping</div>
+                <div class="price">150-200 lei</div>
+            </div>
+            <div class="cut-desc">Shaping, outlining, and styling of the beard</div>
+        </div>
+    
+        <div class="service">
+            <div class="column-header">
+                <div class="cut-type">Complex</div>
+                <div class="price">400 lei</div>
+            </div>
+            <div class="cut-desc">Complex includes men's haircut and beard shaping</div>
+        </div>
+    
+        <div class="service">
+            <div class="column-header">
+                <div class="cut-type">Gold Complex</div>
+                <div class="price">450 lei</div>
+            </div>
+            <div class="cut-desc">Gold Complex includes haircut, beard shaping, and eyebrow shaping</div>
+        </div>
+    </div>
+    
+    <div class="column" id="c3">
+      <div class="service">
+          <div class="barber-type">Barber TOP</div>
+          <div class="column-header">
+              <div class="cut-type">Haircut</div>
+              <div class="price">300 lei</div>
+          </div>
+          <div class="cut-desc">Haircut includes hair washing and final styling</div>
+      </div>
+  
+      <div class="service">
+          <div class="column-header">
+              <div class="cut-type">Classic Haircut</div>
+              <div class="price">350 lei</div>
+          </div>
+          <div class="cut-desc">Haircut performed with scissors only</div>
+      </div>
+  
+      <div class="service">
+          <div class="column-header">
+              <div class="cut-type">Beard Shaping</div>
+              <div class="price">200-250 lei</div>
+          </div>
+          <div class="cut-desc">Shaping, outlining, and styling of the beard</div>
+      </div>
+  
+      <div class="service">
+          <div class="column-header">
+              <div class="cut-type">Complex</div>
+              <div class="price">450 lei</div>
+          </div>
+          <div class="cut-desc">Complex includes men's haircut and beard shaping</div>
+      </div>
+  
+      <div class="service">
+          <div class="column-header">
+              <div class="cut-type">Gold Complex</div>
+              <div class="price">500 lei</div>
+          </div>
+          <div class="cut-desc">Gold Complex includes haircut, beard shaping, and eyebrow shaping</div>
+      </div>
+  </div>  
+        </div>
       </section>
       <section id="Team">
         
