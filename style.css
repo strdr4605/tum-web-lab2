@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+  
 body {
     font-family: "Arial", sans-serif;
 }
@@ -5,10 +10,11 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.9);
     color: rgb(255, 255, 255);
     height: 65px;
     line-height: 65px;
+    z-index: 1000;
 }
 
 .nav_list {
@@ -22,16 +28,72 @@ nav {
     font-size: 17px;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 21px;
     font-weight: 400;
 }
 
 .nav_link:hover{
-    border-bottom: 8px solid white;
-
+    border-bottom: 2px solid white;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.intro{
+    position: relative;
+    max-height: 800px;
+    overflow: hidden;
+}
+
+.description{
+    width: 700px;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: 15%;
+    left: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    height: 200px;
+    padding-bottom: 30px;
+}
+
+.address_text{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.start_img {
+    width: 100%;
+    position: relative; /* Ensure the positioning context */
+}
+
+.fade-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Adjust as needed */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+#Gallery{
+    height: 700px;
+    background-color: black;
+}
+
+#About{
+    height: 700px;
+    background-color: blue;
 }
