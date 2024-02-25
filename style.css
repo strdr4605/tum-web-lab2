@@ -1,55 +1,86 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
     color: #333;
-    margin: 0;
-    padding: 0;
+    background-color: #EEF5DB;
+}
+
+.space50 {
+    height: 50px;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color: #4F6367;
+    padding: 5px 0;
+    z-index: 9999;
+}
+
+nav a {
+    padding: 10px 20px;
+    color: #EAEAEA;
+    font-size: 28px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #7A9E9F;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    color: #4F6367;
     text-align: center;
-    padding: 100px 0;
-}
-
-.header-content {
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 header h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+    font-size: 50px;
+    padding: 50px;
 }
 
 main {
-    position: relative;
+    width: 1050px;
+    margin: 0 auto;
 }
 
 .blog-section {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 400px;
+    padding: 30px;
     text-align: left;
-    display: none;
-}
-
-.blog-section img {
-    width: 100%;
     margin-bottom: 20px;
 }
 
+.blog-section h2 {
+    color: #4F6367;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.blog-section p {
+    font-size: 20px;
+}
+
+.blog-section img {
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 20px;
+}
+
 .cta-btn {
-    display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #4F6367;
+    color: #EAEAEA;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
+    border-radius: 20px;
+    font-size: 20px;
     transition: background-color 0.3s;
 }
 
@@ -57,45 +88,19 @@ main {
     background-color: #555;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 10px;
-    width: 100%;
-    background-color: #333;
-}
-
-nav label {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px 5px 0 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-nav label:hover {
-    background-color: #555;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-#tab1:checked ~ #about,
-#tab2:checked ~ #recensions,
-#tab3:checked ~ #contacts,
-#tab4:checked ~ #pictures {
+.section-link {
     display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #4F6367;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
+    font-size: 15px;
+    background-color: #4F6367;
+    color: #EAEAEA;
+    justify-content: center;
+    padding: 10px 0;
     width: 100%;
 }
