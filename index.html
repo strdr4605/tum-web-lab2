@@ -1,14 +1,66 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ADD YOUR CODE HERE -->
-  </body>
+</head>
+<body>
+    <nav>
+        <a href="#main" for="tab1">Main</a>
+        <a href="#about" for="tab2">About</a>
+        <a href="#recensions" for="tab3">Recensions</a>
+        <a href="#contacts" for="tab4">Contacts</a>
+        <a href="#pictures" for="tab5">Pictures</a>
+    </nav>
+
+    <div class="space50"></div>
+
+    <header>
+        <h1>"In the art of slowing down, a cat reveals itself"</h1>
+    </header>
+
+    <main>
+
+        <section id="main" class="blog-section">
+            <h2>Main</h2>
+            <p>This section is dedicated to providing information our blog.</p>
+        </section>
+
+        <section id="about" class="blog-section">
+            <h2>About</h2>
+            <p>This section is dedicated to providing information about our blog.</p>
+            <img src="about.jpg" alt="About Image">
+            <a href="" class="cta-btn">Learn More</a>
+        </section>
+
+        <section id="recensions" class="blog-section">
+            <h2>Recensions</h2>
+            <p>This section contains reviews and recommendations.</p>
+            <img src="recensions.jpg" alt="Recensions Image">
+            <a href="" class="cta-btn">Read Reviews</a>
+        </section>
+
+        <section id="contacts" class="blog-section">
+            <h2>Contacts</h2>
+            <p>Get in touch with us via the following contact information.</p>
+            <img src="contacts.jpg" alt="Contacts Image">
+            <a href="" class="cta-btn">Contact Us</a>
+        </section>
+
+        <section id="pictures" class="blog-section">
+            <h2>Pictures</h2>
+            <p>Explore captivating images from our blog.</p>
+            <img src="pictures.jpg" alt="Pictures Image">
+            <a href="https://instagram.com/meoworid" class="cta-btn">View Pictures</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simple Blog. All rights reserved.</p>
+    </footer>
+</body>
 </html>

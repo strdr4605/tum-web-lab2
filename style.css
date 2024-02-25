@@ -1,1 +1,106 @@
-/* add your CSS here */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #EEF5DB;
+}
+
+.space50 {
+    height: 50px;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color: #4F6367;
+    padding: 5px 0;
+    z-index: 9999;
+}
+
+nav a {
+    padding: 10px 20px;
+    color: #EAEAEA;
+    font-size: 28px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #7A9E9F;
+}
+
+header {
+    color: #4F6367;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    padding: 50px;
+}
+
+main {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.blog-section {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.blog-section h2 {
+    color: #4F6367;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.blog-section p {
+    font-size: 20px;
+}
+
+.blog-section img {
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #4F6367;
+    color: #EAEAEA;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #555;
+}
+
+.section-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #4F6367;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    background-color: #4F6367;
+    color: #EAEAEA;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+}
