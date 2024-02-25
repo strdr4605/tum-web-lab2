@@ -1,0 +1,48 @@
+.benefits {
+  display: flex;
+  flex-direction: row;
+  padding: 90px;
+}
+
+.intro-to-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+  margin-right: 30px;
+}
+
+.intro-message {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  color: #545be8;
+}
+
+.proposal-message {
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 50px;
+  color: #141e32;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 30px;
+  color: #969696;
+}
+
+.benefit-enum {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+}
+
+.benefit-box {
+  border-radius: 10px;
+  background-color: #545be8;
+}
