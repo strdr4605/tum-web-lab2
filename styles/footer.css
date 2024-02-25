@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  background-color: #393e46;
+  padding: 90px;
+}
+
+.footer .brand-logo {
+  margin-bottom: 30px;
+}
+
+.footer .brand-logo p {
+  color: #f4f4f4;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.brand-info p {
+  line-height: 24px;
+  color: #f4f4f4;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.social-media {
+}
