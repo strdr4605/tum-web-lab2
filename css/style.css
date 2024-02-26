@@ -375,3 +375,97 @@ display: flex;
     color: #D9D9D9;
 }
 
+
+
+#arrivals{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.arrivals_card{
+    width: 484px; 
+}
+.arrivals_card_img{
+    width: 100%;
+    height:auto;
+    border-radius: 10px;
+
+}
+.arrivals_card_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 10px 0;
+    box-sizing: border-box;
+}
+
+.arrivals_card_title{
+    color: #191919;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px; /* 156.25% */
+letter-spacing: -1.28px;
+}
+
+.arrivals_card_subtitle{
+    color: #7F7F7F;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px; /* 208.333% */
+letter-spacing: -0.96px;
+}
+#arrivals_title{
+    color: #000;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 900;
+line-height: 50px; /* 104.167% */
+letter-spacing: 2.88px;
+margin:60px 0 90px;
+}
+
+
+#shop_now{
+    width: 100%;
+    background: linear-gradient(1deg, #E0C340 0.13%, #DFC23E 3.97%, #E1C441 7.2%, #E3C743 10.13%, #E4C542 12.98%, #E6C744 15.99%, #E7C845 19.52%, #E5C643 23.96%, #E6C945 30.43%, #E3C743 36.49%, #E9CA48 42.49%, #EDCE49 49.35%, #F0D44C 55.42%, #F4D84F 61.43%, #F6DA52 65.74%, #F7DB53 72.23%, #F9DD55 77.43%, #F9DF56 83.84%, #FAE157 91.52%, #F9DF56 97.87%);
+display: flex;
+}
+
+#shop_now_title{
+    color: #000;
+    font-family: Poppins;
+    font-size: 111.608px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 137.185px; /* 122.917% */
+    margin-top: 100px;
+}
+
+#shop_now_subtitle{
+    color: #231300;
+font-family: Poppins;
+font-size: 36.04px;
+font-style: normal;
+font-weight: 500;
+line-height: 52.316px; /* 145.161% */
+letter-spacing: -0.721px;
+margin: 35px 0;
+}
+#shop_now_img{
+    width: 45%;
+    height: auto;
+}
+
+#shop_now_right{
+    padding: 0 0 0 100px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
