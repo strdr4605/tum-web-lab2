@@ -71,7 +71,7 @@
   border-radius: 6px;
   border-width: 0px;
   cursor: pointer;
-  padding: 1px;
+  padding: 13px 22px 13px 22px;
   transition: background-color 0.5s, color 0.5s;
   vertical-align: top;
 }
