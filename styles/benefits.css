@@ -1,18 +1,27 @@
 .benefits {
   display: flex;
   flex-direction: row;
-  padding: 90px;
+  padding: 90px 0 90px 90px;
+}
+
+.benefits p {
+  color: inherit;
+}
+
+.benefits .logo {
+  margin-top: 20px;
 }
 
 .intro-to-benefits {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 600px;
+  min-width: 500px;
+  max-width: 600px;
   margin-right: 30px;
 }
 
-.intro-message {
+.intro-to-benefits .intro-message {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -20,7 +29,7 @@
   color: #545be8;
 }
 
-.proposal-message {
+.intro-to-benefits .proposal-message {
   font-weight: 700;
   font-size: 40px;
   font-style: normal;
@@ -28,7 +37,7 @@
   color: #141e32;
 }
 
-.description {
+.intro-to-benefits .description {
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -40,9 +49,34 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.benefit-enum::-webkit-scrollbar {
+  display: none;
 }
 
 .benefit-box {
   border-radius: 10px;
   background-color: #545be8;
+  padding: 20px;
+  width: 300px;
+}
+
+.benefits .perk-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  color: white;
+  margin: 15px 0 30px;
+}
+
+.benefits .perk-description {
+  color: #dddddd;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
 }
