@@ -1,7 +1,7 @@
 .preview-courses {
   display: flex;
   flex-direction: row;
-  padding: 40px 90px 40px 90px;
+  padding: 90px;
 }
 
 .courses-list {
@@ -16,6 +16,7 @@
   height: 345.08px;
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .img-box {
@@ -38,9 +39,6 @@
 
 .best-course-ticket {
   position: absolute;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   width: 123.45px;
   height: 43.25px;
   background-color: #545be8;
