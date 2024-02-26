@@ -353,6 +353,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 50px;
 }
 .arrivals_card {
   width: 484px;
@@ -466,6 +467,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 50px;
 }
 .favorite_card {
   width: 834px;

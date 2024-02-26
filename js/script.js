@@ -6,3 +6,10 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+
+
+  function scroll_top_div(to_where) {
+    document.getElementById(to_where).scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+}
