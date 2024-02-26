@@ -1,0 +1,99 @@
+.preview-courses {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 90px 40px 90px;
+}
+
+.courses-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.course-box {
+  width: 328px;
+  height: 345.08px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-box {
+  position: relative;
+}
+
+.img-box img {
+  border-radius: 10px 10px 0 0;
+}
+
+.course-box .img-box p {
+  position: absolute;
+  font-size: 21.67px;
+  font-weight: 700;
+  color: white;
+  right: 10px;
+  bottom: 10px;
+  z-index: 100;
+}
+
+.best-course-ticket {
+  position: absolute;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 123.45px;
+  height: 43.25px;
+  background-color: #545be8;
+  top: 20px;
+}
+
+.img-box .best-course-ticket p {
+  font-weight: 700;
+  font-size: 16.25px;
+  color: white;
+  right: 12px;
+  bottom: 13px;
+}
+
+.shadow {
+  position: absolute;
+  bottom: 10px;
+  height: 70px;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1)
+  );
+  bottom: 0;
+}
+
+.course-box .course-name {
+  font-weight: 700;
+  font-size: 21.67px;
+  color: #141e32;
+}
+
+.course-box .views {
+  font-weight: 400;
+  font-size: 12.64px;
+  color: #545be8;
+}
+
+.course-box p {
+  font-weight: 400;
+  font-size: 16.25px;
+  color: #969696;
+}
+
+.course-review {
+  padding: 25px 15px 25px 15px;
+}
+
+.course-name-views {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
