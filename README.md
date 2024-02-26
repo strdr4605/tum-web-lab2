@@ -8,6 +8,8 @@ Welcome to the Web Programming Laboratory project series! This repository contai
 
 ## Overview
 
+GitHub pages [link](https://cristianbrinza.github.io/tum-web-lab2/)
+
 In this laboratory session, we focused on developing a basic front-end landing page for a website. The main objectives of this task were:
 
 - Gain familiarity with HTML5 structure and syntax.
