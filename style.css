@@ -8,9 +8,13 @@ body {
     background: #D7D6C5;
 }
 
+section {
+    padding: 1rem;
+    overflow: hidden;
+}
+
 .container {
-    max-width: 1600px;
-    margin: 0 auto;
+    width: 100vw;
 }
 
 .grid {
@@ -24,6 +28,11 @@ body {
 .col-span-6 {
     grid-column: span 6 / span 6;
 }
+
+.col-span-4 {
+    grid-column: span 4 / span 4;
+}
+
 
 .header {
     padding: 20px;
@@ -67,6 +76,11 @@ body {
     line-height: 89px;
 }
 
+.text-48 {
+    font-size: 48px;
+    line-height: 24px;
+}
+
 .text-16 {
     font-size: 16px;
     line-height: 32px;
@@ -78,6 +92,10 @@ body {
 
 .bg-primary {
     background-color: #4475F2;
+}
+
+.bg-lavender {
+    background-color: #E3E2D6;
 }
 
 .text-white {
@@ -118,8 +136,16 @@ body {
     font-weight: 700;
 }
 
+.bolder {
+    font-weight: 600;
+}
+
 .flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-col {
@@ -154,6 +180,10 @@ body {
     padding: 1rem;
 }
 
+.p-3 {
+    padding: 3rem;
+}
+
 .absolute {
     position: absolute;
 }
@@ -163,6 +193,50 @@ body {
 }
 
 .position-cover {
-    top: -10%;
-    left: 10%;
+    top: -25%;
+    left: 12%;
+}
+
+.mb-1 {
+    margin-bottom: 1rem !important;
+}
+
+.mt-3 {
+    margin-top: 3rem !important;
+}
+
+.mt-12 {
+    margin-top: 12rem !important;
+}
+
+.h-12 {
+    height: 3rem !important;
+}
+
+.w-12 {
+    width: 3rem !important;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.rounded-3xl {
+    border-radius: 1.5rem !important;
+}
+
+.w-fit {
+    width: fit-content !important;
+}
+
+.h-fit {
+    height: fit-content !important;
+}
+
+.service-item {
+    flex-basis: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
 }

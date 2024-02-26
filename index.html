@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<main class="container">
+<main class="container relative overflow-hidden">
   <section class="grid grid-cols-12">
     <header class="col-span-6 header flex flex-col gap-3">
       <div class="flex justify-between items-center gap-3">
@@ -17,7 +17,7 @@
           <span class="bold">CropScout</span>
         </div>
         <div class="flex justify-center items-center gap-1 nav-links">
-          <a href="#feature">Feature</a>
+          <a href="#features">Features</a>
           <a href="#service">Service</a>
           <a href="#review">Review</a>
           <a href="#location">Location</a>
@@ -35,6 +35,40 @@
     </header>
     <div class="col-span-6 relative">
       <img src="assets/cover.png" alt="Cover Image" class="absolute position-cover"/>
+    </div>
+  </section>
+  <section class="flex flex-col justify-center items-center gap-3 bg-lavender p-3">
+    <div class="mb-1">
+      <h1 class="bold text-48">What do we do?</h1>
+    </div>
+    <div class="grid grid-cols-12 gap-2">
+      <div class="col-span-4 flex flex-col gap-1 justify-center items-center h-fit">
+        <div class="bg-primary p-1 rounded-3xl w-fit">
+          <img src="assets/scan.svg" alt="Scan the landscape" class="w-12 h-12">
+        </div>
+        <h3 class="text-24 bolder">Scan the landscape</h3>
+        <p class="text-16 text-comet">
+          CropScout's drone technology captures high-definition aerial imagery to map and analyze every inch of your agricultural landscape with precision.
+        </p>
+      </div>
+      <div class="col-span-4 flex flex-col gap-1 justify-center items-center h-fit">
+        <div class="bg-primary p-1 rounded-3xl w-fit">
+          <img src="assets/review.svg" alt="Review" class="w-12 h-12">
+        </div>
+        <h3 class="text-24 bolder">Review</h3>
+        <p class="text-16 text-comet">
+          Seamlessly examine detailed field images and data through the CropScout app to identify areas needing attention and plan effective interventions.
+        </p>
+      </div>
+      <div class="col-span-4 flex flex-col gap-1 justify-center items-center h-fit">
+        <div class="bg-primary p-1 rounded-3xl w-fit">
+          <img src="assets/stats.svg" alt="Statistics" class="w-12 h-12">
+        </div>
+        <h3 class="text-24 bolder">Statistics</h3>
+        <p class="text-16 text-comet">
+          Access comprehensive analytics and insights on crop health, growth trends, and field conditions, enabling data-driven agricultural decision-making.
+        </p>
+      </div>
     </div>
   </section>
 </main>
