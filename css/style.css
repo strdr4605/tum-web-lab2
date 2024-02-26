@@ -24,8 +24,8 @@ padding:20px 40px;
   .topnav {
     overflow: hidden;
     background-color: transparent;
-    margin-top: 20px;
-    margin-bottom: 55px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   
   .topnav a {
@@ -41,6 +41,10 @@ letter-spacing: 0.22px;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+   
+    text-align: center;
+    display: flex;
+    align-items: center;
   }
   
   .topnav a:hover {
@@ -51,10 +55,11 @@ letter-spacing: 0.22px;
   /* Create a right-aligned (split) link inside the navigation bar */
   .topnav a.split {
     float: right;
+    margin-top: 25px;
   }
 
   .topnav .logo{
-    letter-spacing: 1.2px;
+
     text-align: center;
     display: flex;
     align-items: center;
@@ -63,7 +68,7 @@ font-family: Poppins;
 font-size: 40px;
 font-style: normal;
 font-weight: 400;
-line-height: normal;
+line-height: 25px;
 letter-spacing: 1.2px;
 
   }
@@ -130,7 +135,6 @@ letter-spacing: 1.2px;
   #hero{
     border-radius: 59px;
 background: #F4F6F5;
-max-width:1720px;
 padding: 75px 120px;
 box-sizing: border-box;
 margin-bottom: 30px;
@@ -151,8 +155,8 @@ line-height: 120px; /* 125% */
   }
 
   #topnav_logo{
-    width: 42px;
-height: auto;
+    width: auto;
+height: 100%;
 margin-right: 10px;
   }
 
@@ -168,7 +172,8 @@ margin: 40px 0 20px;
   }
 
   #hero_img{
-    width: 772px;
+    width: 725px;
+    margin-right: 40px;
     height:auto;
   }
 
