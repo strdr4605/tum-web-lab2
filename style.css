@@ -1,52 +1,78 @@
 /* add your CSS here */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: black;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Source Sans 3", "Times New Roman", Times, serif;
 }
 
-.scrollable {
-    max-height: 300px; /* Adjust the max-height as needed */
-    overflow-y: auto;
-    width: 80%; /* Adjust the width as needed */
-    background-color: white; /* Background color for the scrollable container */
-    padding: 20px; /* Add padding inside the container as needed */
-    border-radius: 10px; /* Add border-radius for rounded corners */
-}
-  
 h1 {
-    font-family: verdana;
-    font-size: 20px;
+  font-family: verdana;
+  font-size: 20px;
 }
 
-#buy
-div {
-    position: relative;
-    left: 200px;
-    top: 200px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
+#buy div {
+  position: relative;
+  font-size: 40px;
 }
 
-#buy_our_membership
-p {
-    position: relative;
-    top: 25px;
-    left: 0px;
-    width: fit-content;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
-    color: white;
-    background-color: black;
+#hero_comp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
 }
 
+#happy {
+  position: relative;
+  top: 45px;
+  border-radius: 100%;
+}
 
+#buy_our_membership p {
+  position: relative;
+  width: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 25px;
+  color: white;
+  background-color: black;
+}
+
+.dot {
+  left: 200px;
+  top: 500px;
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+#girls {
+  background-color: #c4c4c4;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+  font-size: 25px;
+  padding: 96px 0px;
+}
+
+#section2 {
+  display: flex;
+  gap: 20px;
+}
+.bullet {
+  max-width: 260px;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: #565454;
+}
