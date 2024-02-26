@@ -383,3 +383,67 @@ a {
     height: 40px;
     cursor: pointer;
 }
+
+.footer{
+    background-color: black;
+    height: 550px;
+
+
+}
+
+.iframe{
+    padding-left: 29%;
+    height: 300px;
+    width: 40%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.t1g{
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin-left: 40%;
+    color: rgb(203, 155, 44);
+}
+
+.t11{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.t22{
+    margin-bottom: 10px;
+    margin-left: 60px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Email,
+.Phone{
+    margin-top: 30px;
+    margin-right: 40px;
+    width: 250px;
+    background-color: rgba(23,24,25,255);
+}
+
+.end{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    color:white;
+    font-size: 15px;
+}
