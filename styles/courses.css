@@ -1,7 +1,7 @@
 .preview-courses {
   display: flex;
   flex-direction: row;
-  padding: 90px;
+  padding: 90px 90px 70px 90px;
 }
 
 .courses-list {

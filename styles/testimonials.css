@@ -1,0 +1,82 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 90px 90px 90px;
+}
+
+.testimonials .title {
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  color: #141e32;
+  margin-bottom: 40px;
+}
+
+.card-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  flex-direction: row;
+}
+
+.graduate-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 588px;
+  max-width: 588px;
+  height: 268px;
+  max-height: 268px;
+  background-image: url("../images/card.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.client-img {
+  width: 48px;
+  margin-right: 15px;
+}
+
+.client-name {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.client-role {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: #969696;
+}
+
+.client-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.graduate-card .group-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.stars {
+  width: 152px;
+  height: 24px;
+  margin-top: 20px;
+}
+
+.client-comment {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 30px;
+  color: #646464;
+  margin-top: 10px;
+}
