@@ -10,10 +10,10 @@ Improve your already amazing landing page
   - There should be mobile-only elements (example: a section, a title, an image) `1 Point`
     
 - We need a mascot for our page similar to Microsoft Clippy, the mascot should:
-  - be related to the topic of the landing page
+  - be related to the topic of the landing page `0.4 Points`
   - be friendly/pleasant to the eyes (can be an image or an SVG) `1 Point`
   - appear on the page after some delay on corners or borders of the page `1 Point`
-  - be animated (rotating, tilting, jumping, walking) `2 Point`
+  - be animated (rotating, tilting, jumping, walking) `1.4 Points`
   - display a welcome/CTA/info message when hovering with the mouse `1 Point`
  
 ## Dev requirements
