@@ -1,4 +1,4 @@
-.spotlight {
+.about-us {
   display: flex;
   flex-direction: row;
   background: linear-gradient(
@@ -9,7 +9,7 @@
   padding: 40px 90px 40px 90px;
 }
 
-.spotlight .description {
+.about-us .description {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -17,7 +17,7 @@
   margin-top: 50px;
 }
 
-.spotlight .title {
+.about-us .title {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -25,7 +25,7 @@
   color: #f0c932;
 }
 
-.spotlight .headline {
+.about-us .headline {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -34,7 +34,7 @@
   color: #ffffff;
 }
 
-.spotlight .course-description {
+.about-us .course-description {
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -42,7 +42,7 @@
   color: #dddddd;
 }
 
-.spotlight .number {
+.about-us .number {
   font-family: "Inter", sans-serif;
   font-weight: 800;
   font-size: 60px;
@@ -52,7 +52,7 @@
   margin-bottom: 10px;
 }
 
-.spotlight p {
+.about-us p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;

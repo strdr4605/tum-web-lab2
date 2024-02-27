@@ -18,7 +18,7 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  z-index: 1;
+  z-index: 1000;
   background-color: white;
   height: 80px;
   display: flex;
@@ -40,6 +40,7 @@
 
 .header-menu p {
   cursor: pointer;
+  color: black;
 }
 
 .header-button-group {

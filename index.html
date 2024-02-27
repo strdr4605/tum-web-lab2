@@ -20,21 +20,31 @@
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/hero.css" />
     <link rel="stylesheet" href="/styles/benefits.css" />
-    <link rel="stylesheet" href="/styles/spotlight.css" />
+    <link rel="stylesheet" href="/styles/about-us.css" />
     <link rel="stylesheet" href="/styles/courses.css" />
     <link rel="stylesheet" href="/styles/testimonials.css" />
 </head>
 
 <body>
     <div class="header">
-        <div class="brand-logo">
-            <img class="logo" src="icons/logo.svg">
-            <p>CourseMe</p>
-        </div>
+        <a href="#">
+            <div class="brand-logo">
+                <img class="logo" src="icons/logo.svg">
+                <p>CourseMe</p>
+            </div>
+        </a>
         <div class="header-menu">
-            <p class="active-tab">Courses</p>
-            <p>About Us</p>
-            <p>Contacts</p>
+            <a href="#courses">
+                <p>Courses</p>
+            </a>
+            <a href="#about-us">
+                <p>About Us</p>
+            </a>
+            <a href="#footer">
+                <p>Contacts</p>
+            </a>
+
+
         </div>
         <div class="header-button-group">
             <a href="pages/log-in.html">
@@ -44,7 +54,7 @@
             </a>
             <a href="pages/sign-up.html">
                 <button class="register-button">
-                    <p>Register</p>
+                    <p>Join for Free</p>
                 </button>
             </a>
         </div>
@@ -58,9 +68,11 @@
                 Start your journey to
                 mastery today!</p>
             <div class="hero-call-to-action">
-                <button class="register-button">
-                    <p>Enroll Today</p>
-                </button>
+                <a href="pages/sign-up.html">
+                    <button class="register-button">
+                        <p>Enroll Today</p>
+                    </button>
+                </a>
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="play-video-box">
                     <img class="play-img" src="icons/play-img.svg" alt="Play">
                     <p>Watch intro</p>
@@ -102,35 +114,33 @@
         </div>
     </div>
 
-    <div class="spotlight">
+    <div class="about-us" id="about-us">
         <img style="scale: 90%;" src="images/spotlight-course.svg">
         <div class="description">
-            <p class="title">Spotlight Course</p>
-            <p class="headline">Empower Your Future with Our Interactive Learning Programs</p>
-            <p class="course-description">Dive into a learning experience where knowledge meets innovation. Our
-                interactive courses, like <span style="font-weight: bold; font-style: italic;">Empower Your
-                    Future</span>, are crafted to
-                inspire and propel you towards your
-                career goals. Led by seasoned professionals, each session is an adventure into new skills and
-                perspectives.</p>
+            <p class="title">About CourseMe</p>
+            <p class="headline">Empower Your Future with CourseMe Interactive Learning Programs</p>
+            <p class="course-description">At CourseMe, we believe in empowering individuals through education. Our
+                e-learning platform offers a wide range of courses designed to enhance skills and advance careers. Since
+                our inception, we have been committed to providing accessible, high-quality education to learners around
+                the world.</p>
             <div class="statistics">
                 <div class="metric">
-                    <p class="number">6,000</p>
-                    <p>Inspired Minds Engaged</p>
-                </div>
-                <div class="metric">
-                    <p class="number">4,000+</p>
-                    <p>Active Members</p>
-                </div>
-                <div class="metric">
                     <p class="number">100+</p>
-                    <p>Specialized Courses</p>
+                    <p>Active Courses</p>
+                </div>
+                <div class="metric">
+                    <p class="number">5,000+</p>
+                    <p>Enrolled Students</p>
+                </div>
+                <div class="metric">
+                    <p class="number">1,000+</p>
+                    <p>Expert Instructors</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="preview-courses">
+    <div class="preview-courses" id="courses">
         <div class="courses-list">
             <div class="course-box">
                 <div class="img-box">
@@ -270,7 +280,7 @@
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" id="footer">
         <div style="display: flex; flex-direction: row; justify-content: space-between;">
             <div class="footer-left-block">
                 <div class="brand-info">
