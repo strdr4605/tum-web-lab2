@@ -11,52 +11,151 @@
     <nav>
         <a href="#main" for="tab1">Main</a>
         <a href="#about" for="tab2">About</a>
-        <a href="#recensions" for="tab3">Recensions</a>
+        <a href="#weeks-favorites" for="tab3">Contest</a>
+        <a href="#gallery" for="tab5">Gallery</a>
+        <a href="#login" for="tab5">Login</a>
         <a href="#contacts" for="tab4">Contacts</a>
-        <a href="#pictures" for="tab5">Pictures</a>
     </nav>
 
     <div class="space50"></div>
 
-    <header>
-        <h1>"In the art of slowing down, a cat reveals itself"</h1>
-    </header>
+    
 
     <main>
 
         <section id="main" class="blog-section">
-            <h2>Main</h2>
-            <p>This section is dedicated to providing information our blog.</p>
+            <img src="main.jpg" alt="Main Image">        
         </section>
 
         <section id="about" class="blog-section">
-            <h2>About</h2>
-            <p>This section is dedicated to providing information about our blog.</p>
-            <img src="about.jpg" alt="About Image">
-            <a href="" class="cta-btn">Learn More</a>
-        </section>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="about.jpg" alt="About Image">
+                </div>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p> Meoworld is your destination for all things kitten! As the photographer behind the lens, I capture the charm and mischief of these adorable furballs.
 
-        <section id="recensions" class="blog-section">
-            <h2>Recensions</h2>
-            <p>This section contains reviews and recommendations.</p>
-            <img src="recensions.jpg" alt="Recensions Image">
-            <a href="" class="cta-btn">Read Reviews</a>
+                        Join us for daily doses of cuteness and explore the world of kittens through our heartfelt snapshots.
+                        
+                        Paws and whiskers, Meoworid</p>
+                    <a href="#" class="cta-btn">Learn More</a>
+                </div>
+            </div>
         </section>
-
-        <section id="contacts" class="blog-section">
-            <h2>Contacts</h2>
-            <p>Get in touch with us via the following contact information.</p>
-            <img src="contacts.jpg" alt="Contacts Image">
-            <a href="" class="cta-btn">Contact Us</a>
+        
+        <section id="weeks-favorites" class="blog-section slideshow">
+            <h2>Week's Favorites</h2>
+            <div class="favorites-container">
+                <div class="favorite-item">
+                    <img src="rec1.jpg" alt="Favorite 1">
+                    <p>This adorable kitten stole our hearts this week! Cast your vote below.</p>
+                    <button class="vote-btn">Vote</button>
+                </div>
+                <div class="favorite-item">
+                    <img src="rec2.jpg" alt="Favorite 2">
+                    <p>This playful little furball brought smiles to our faces! Cast your vote below.</p>
+                    <button class="vote-btn">Vote</button>
+                </div>
+                <div class="favorite-item">
+                    <img src="rec3.jpg" alt="Favorite 3">
+                    <p>Such elegance and grace! This kitten deserves your vote below.</p>
+                    <button class="vote-btn">Vote</button>
+                </div>
+                <div class="favorite-item">
+                    <img src="rec4.jpg" alt="Favorite 4">
+                    <p>This adventurous kitten explored new heights! Cast your vote below.</p>
+                    <button class="vote-btn">Vote</button>
+                </div>
+            </div>
         </section>
-
-        <section id="pictures" class="blog-section">
-            <h2>Pictures</h2>
-            <p>Explore captivating images from our blog.</p>
-            <img src="pictures.jpg" alt="Pictures Image">
-            <a href="https://instagram.com/meoworid" class="cta-btn">View Pictures</a>
+        
+        <section id="gallery" class="blog-section">
+            <h2>Gallery</h2>
+            <div class="slideshow">
+                <input type="radio" id="slide1" name="slides" checked>
+                <input type="radio" id="slide2" name="slides">
+                <input type="radio" id="slide3" name="slides">
+                <input type="radio" id="slide4" name="slides">
+                <input type="radio" id="slide5" name="slides">
+                <input type="radio" id="slide6" name="slides">
+                <input type="radio" id="slide7" name="slides">
+                <input type="radio" id="slide8" name="slides">
+                <input type="radio" id="slide9" name="slides">
+        
+                <div class="slides">
+                    <div class="slide" id="s1">
+                        <img src="pic1.jpg" alt="Picture 1">
+                    </div>
+                    <div class="slide" id="s2">
+                        <img src="pic2.jpg" alt="Picture 2">
+                    </div>
+                    <div class="slide" id="s3">
+                        <img src="pic3.jpg" alt="Picture 3">
+                    </div>
+                    <div class="slide" id="s4">
+                        <img src="pic4.jpg" alt="Picture 4">
+                    </div>
+                    <div class="slide" id="s5">
+                        <img src="pic5.jpg" alt="Picture 5">
+                    </div>
+                    <div class="slide" id="s6">
+                        <img src="pic6.jpg" alt="Picture 6">
+                    </div>
+                    <div class="slide" id="s7">
+                        <img src="pic7.jpg" alt="Picture 7">
+                    </div>
+                    <div class="slide" id="s8">
+                        <img src="pic8.jpg" alt="Picture 8">
+                    </div>
+                    <div class="slide" id="s9">
+                        <img src="pic9.jpg" alt="Picture 9">
+                    </div>
+                </div>
+        
+                <label for="slide3" class="prev">&#10094;</label>
+                <label for="slide2" class="next">&#10095;</label>
+            </div>
+            <a href="#" class="cta-btn">See More</a>
         </section>
-
+        
+        <section id="login" class="blog-section fancy-login">
+            <h2 class="login-heading">Be a part of our family</h2>
+            <div class="login-content">
+                <img src="paw1.png" alt="Left Image" class="login-image">
+                <form action="/login" method="post" class="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required><br><br>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    
+                    <input type="submit" value="Login">
+                </form>
+                <img src="paw2.png" alt="Right Image" class="login-image">
+            </div>
+        </section>
+        
+        <section id="contact" class="blog-section">
+            <h2 class="contact-heading">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <p class="phone-number">Phone: +1 (123) 456-7890</p>
+                        <a href="https://www.instagram.com/meoworid" target="_blank" class="instagram-logo">
+                            <img src="insta.jpg" alt="Instagram Logo"> <!-- Instagram logo -->
+                        </a>
+                    </div>
+                    <div class="message-box">
+                        <textarea placeholder="Type your message here..."></textarea> <!-- Message box -->
+                        <button class="send-message-btn">Send</button> <!-- Button to send message -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
     </main>
 
     <footer>
