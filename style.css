@@ -8,11 +8,6 @@ body {
   font-family: "Source Sans 3", "Times New Roman", Times, serif;
 }
 
-h1 {
-  font-family: verdana;
-  font-size: 20px;
-}
-
 #buy div {
   position: relative;
   font-size: 75px;
@@ -28,11 +23,11 @@ h1 {
 
 #happy {
   position: relative;
-  top: 45px;
+  top: 45.5px;
   border-radius: 100%;
 }
 
-#buy_our_membership p {
+#buy_our_membership button {
   position: relative;
   width: fit-content;
   padding-top: 10px;
@@ -43,6 +38,11 @@ h1 {
   font-weight: 700;
   color: white;
   background-color: black;
+}
+
+#buy_our_membership button a {
+  text-decoration: none;
+  color: white;
 }
 
 .dot {
@@ -56,12 +56,11 @@ h1 {
 
 #girls {
   background-color: #c4c4c4;
-  height: 300px;
   display: flex;
   justify-content: center;
   gap: 130px;
   font-size: 25px;
-  padding: 200px 0px;
+  padding: 100px 0px;
 }
 
 #learn {
@@ -137,7 +136,6 @@ h1 {
   padding-top: 10px;
   font-size: 25px;
   font-weight: 700;
-  text-align: center;
 }
 
 .service p {
@@ -151,16 +149,17 @@ h1 {
     justify-content: center;
     align-content: center;
     padding-top: 50px;
-    padding-bottom: 50px;
+    height: 300px;
 }
 
 #surprised p {
   padding-top: 40px;
   text-align: center;
+  font-weight: 600;
 }
 
 #surprised_div {
-  max-width: 350px;
+  max-width: 270px;
 }
 
 #surprised_img {
@@ -173,4 +172,45 @@ h1 {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+#buy_now {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-color: black;
+  padding: 150px 0px;
+  color: white;
+}
+
+#buy_right_now {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#get_girls {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#buy_happiness p {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: fit-content;
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+}
+
+#trademark {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: center;
+  align-content: center;
+  background-color: #ababab;
 }
