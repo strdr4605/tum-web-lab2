@@ -145,7 +145,7 @@ h1 {
   text-align: justify;
 }
 
-/* #surprised {
+#surprised {
   background-color: #c4c4c4;
   display: flex;
     justify-content: center;
@@ -173,4 +173,4 @@ h1 {
   display: flex;
   justify-content: center;
   align-content: center;
-} */
+}
