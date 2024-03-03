@@ -439,3 +439,211 @@ footer {
     padding: 10px 0;
     width: 100%;
 }
+
+/* Your existing CSS code */
+
+@media screen and (max-width: 767px) {
+    nav {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 8px;
+        margin: 4px;
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        padding: 16px;
+    }
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .blog-section {
+        padding: 8px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .blog-section h2 {
+        font-size: 18px;
+    }
+
+    .blog-section p {
+        font-size: 12px;
+    }
+
+    .blog-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    #login .login-heading {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    #login .login-image {
+        width: 64px;
+    }
+
+    #login .login-form {
+        max-width: 200px;
+    }
+
+    #login .login-form label,
+    #login .login-form input[type="text"],
+    #login .login-form input[type="password"],
+    #login .login-form input[type="submit"] {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    #contact .contact-heading {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    #contact .contact-content {
+        width: 100%;
+    }
+
+    #contact .contact-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #contact .phone-number {
+        font-size: 14px;
+    }
+
+    #contact .instagram-logo img {
+        width: 20px;
+    }
+
+    #contact .message-box textarea {
+        height: 60px;
+        font-size: 12px;
+        width: calc(100% - 20px);
+        margin-bottom: 10px;
+    }
+
+    #contact .send-message-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-btn {
+        display: block;
+    }
+
+    .mobile-only-section {
+        display: block;
+    }
+}
+
+.mobile-only-section img {
+    max-width: 100%;
+    height: auto;
+}
+/* Your existing CSS code */
+
+@media screen and (max-width: 767px) {
+    /* CSS for mobile devices */
+
+    .mobile-only-section {
+        display: block;
+    }
+
+    .desktop-only-section {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .mobile-only-section {
+        display: none;
+    }
+
+    .desktop-only-section {
+        display: block;
+    }
+}
+
+.mascot-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    visibility: hidden; /* Initially hidden */
+}
+  
+.mascot {
+    width: 100px;
+    height: 100px;
+    background-image: url('mascot.png'); /* Replace 'mascot.png' with your image path */
+    background-size: contain;
+    background-repeat: repeat;
+    animation: appear 15s ease-in-out 1 forwards, rotate 4s infinite ; /* Adjust the duration and timing as needed */
+}
+
+/* Animation */
+@keyframes appear {
+    0% {
+        transform: translateX(150px) translateY(150px) rotate(45deg) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(50px) translateY(50px) rotate(-15deg) scale(1.2);
+    }
+    100% {
+        transform: translateX(0) translateY(0) rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.mascot-container {
+    visibility: visible; /* Make the mascot container visible */
+}
+.tooltip {
+    position: absolute;
+    bottom: 110%; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color */
+    color: #fff; /* Adjust text color */
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Prevents the tooltip from blocking mouse events */
+}
+
+/* Show the tooltip when hovering over the mascot */
+.mascot:hover + .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+}
