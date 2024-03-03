@@ -15,7 +15,8 @@ h1 {
 
 #buy div {
   position: relative;
-  font-size: 40px;
+  font-size: 75px;
+  font-weight: 700;
 }
 
 #hero_comp {
@@ -39,6 +40,7 @@ h1 {
   padding-left: 40px;
   padding-right: 40px;
   font-size: 25px;
+  font-weight: 700;
   color: white;
   background-color: black;
 }
@@ -54,20 +56,37 @@ h1 {
 
 #girls {
   background-color: #c4c4c4;
-  height: 500px;
+  height: 300px;
   display: flex;
   justify-content: center;
-  gap: 110px;
+  gap: 130px;
   font-size: 25px;
-  padding: 96px 0px;
+  padding: 200px 0px;
+}
+
+#learn {
+    font-size: 47px;
+    font-weight: 700;
 }
 
 #section2 {
   display: flex;
-  gap: 20px;
+  gap: 50px;
 }
+
 .bullet {
-  max-width: 260px;
+  max-width: 270px;
+}
+
+.bullet h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 33px;
+}
+
+.bullet p {
+  text-align: justify;
 }
 
 .circle {
@@ -76,3 +95,82 @@ h1 {
   border-radius: 100%;
   background-color: #565454;
 }
+
+#services {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#our_services {
+  display: flex;
+  font-size: 47px;
+  font-weight: 700;
+  padding-left: 310px;
+}
+
+#services_bullets {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 30px;
+    gap: 50px;
+}
+
+.service_div_img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.service_img {
+    height: 175px;
+    width: 210x;
+}
+
+.service {
+    max-width: 260px;
+    align-content: center;
+    justify-content: center;
+}
+
+.service h3 {
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.service p {
+  padding-top: 10px;
+  text-align: justify;
+}
+
+/* #surprised {
+  background-color: #c4c4c4;
+  display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#surprised p {
+  padding-top: 40px;
+  text-align: center;
+}
+
+#surprised_div {
+  max-width: 350px;
+}
+
+#surprised_img {
+  width: 175px;
+  height: 175px;
+  border-radius: 100%;
+}
+
+.img_center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+} */
