@@ -561,29 +561,13 @@ footer {
     max-width: 100%;
     height: auto;
 }
-/* Your existing CSS code */
-
-@media screen and (max-width: 767px) {
-    /* CSS for mobile devices */
-
-    .mobile-only-section {
-        display: block;
-    }
-
-    .desktop-only-section {
-        display: none;
-    }
-}
 
 @media screen and (min-width: 768px) {
 
     .mobile-only-section {
-        display: none;
-    }
-
-    .desktop-only-section {
         display: block;
     }
+
 }
 
 .mascot-container {
@@ -627,23 +611,4 @@ footer {
 }
 .mascot-container {
     visibility: visible; /* Make the mascot container visible */
-}
-.tooltip {
-    position: absolute;
-    bottom: 110%; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color */
-    color: #fff; /* Adjust text color */
-    padding: 10px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none; /* Prevents the tooltip from blocking mouse events */
-}
-
-/* Show the tooltip when hovering over the mascot */
-.mascot:hover + .tooltip {
-    opacity: 1;
-    pointer-events: auto;
 }
