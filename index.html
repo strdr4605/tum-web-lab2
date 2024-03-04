@@ -16,285 +16,196 @@
 <body>
 
 
-  <main>
-    <div class="topnav" id="myTopnav">
-      <a class="logo" href="#home"> <img id="topnav_logo" src="images/logo.png" alt="UTM FASION">UTM&nbsp;<span
-          id="topnav_logo_bold"> FASION</span></a>
-      <a href="#about" class="btn split">SIGN UP</a>
-      <a href="#news" class="split">News</a>
-      <a href="#contact" class="split" onclick="scroll_top_div('subscribe')">Contact</a>
 
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+  <div class="topnav main" id="myTopnav">
+    <a class="logo" href="#home"> <img id="topnav_logo" src="images/logo.png" alt="UTM FASION">UTM&nbsp;<span
+        id="topnav_logo_bold"> FASION</span></a>
+    <a href="#about" class="btn split">SIGN UP</a>
+
+    <a href="#news" class="split">News</a>
+    <a href="#contact" class="split" onclick="scroll_top_div('subscribe')">Contact</a>
+    <a href="#news" class="split">CATALOGUE</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <svg style="margin-right:30px" xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 18 12"
+        fill="none">
+        <path d="M0 12V10H18V12H0ZM0 7V5H18V7H0ZM0 2V0H18V2H0Z" fill="black" />
+      </svg>
+    </a>
+  </div>
 
 
-  </main>
-
-
-
-  <main>
+  </div>
+  <div class="main">
     <div id="hero">
-
       <div id="hero_left">
-        <div id="hero_h1">
-          LET’S<br>
-          EXPLORE<br>
-          UNIQUE<br>
-          CLOTHES.<br>
-        </div>
-
-
-        <div id="hero_h2">
-          Live for Influential and Innovative fashion!
-        </div>
-
-        <div id="hero_call_to_action">
-          <svg xmlns="http://www.w3.org/2000/svg" width="190" height="32" viewBox="0 0 190 32" fill="none">
-            <path d="M0 30.6162C48 -11.7838 146.667 -1.05051 190 9.61616C176.4 33.6162 57.6667 33.6162 0 30.6162Z"
-              fill="#EBD96B" />
-          </svg>
-
-          <div class="btn">
-            Shop Now
+        <div>
+          <div>
+            <span> LET'S <br class="br_hide">EXPLORE </span><br class="br_hide">
+            <span>UNIQUE</span><br class="br_hide">
+            <span> CLOTHES. </span>
           </div>
 
+
+          <div id="hero_small_text">Live for Influential and Innovative fashion!</div>
+        </div>
+
+        <div class="btn btn_shop">
+          Show Now
         </div>
       </div>
-      <img id="hero_img" src="images/hero_img.png" alt="Fasion">
+
+      <div id="hero_right">
+        <img id="hero_img" src="images/hero_img.png" alt="UTM FASION">
+      </div>
     </div>
+  </div>
 
-
-  </main>
 
 
   <div id="companies">
-    <main id="companies_logos">
-      <img class="companies_logos_img" src="images/h&m.png" alt="H%M">
-      <img class="companies_logos_img" src="images/obey.png" alt="Obey">
-      <img class="companies_logos_img" src="images/shopify.png" alt="Shopify">
-      <img class="companies_logos_img" src="images/lacoste.png" alt="Lacoste">
-      <img class="companies_logos_img" src="images/levis.png" alt="Levis">
-      <img class="companies_logos_img" src="images/amazon.png" alt="Amazon">
-    </main>
-
-  </div>
+    <div class="main" id="companies_inside">
+      <img class="companies_logos_img" src="images/versace.png" alt="versace">
+      <img class="companies_logos_img" src="images/disel.png" alt="">
+      <img class="companies_logos_img" src="images/chanell.png" alt="">
+      <img class="companies_logos_img" src="images/levis.png" alt="">
+      <img class="companies_logos_img" src="images/fila.png" alt="">
+      <img class="companies_logos_img" src="images/lee.png" alt="">
 
 
 
 
-  <main>
-    <div id="arrivals_title">NEW ARRIVALS</div>
-    <div id="arrivals">
-      <div class="arrivals_card">
-        <img class="arrivals_card_img" src="images/arrivals_1.png" alt="arrivals">
-        <div class="arrivals_card_flex">
-          <div class="arrivals_card_title">
-            Hoodies & Sweetshirt
-            <br>
-            <span class="arrivals_card_subtitle">Explore Now!</span>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 34 24" fill="none">
-            <path
-              d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807612 21.9792 0.807612 21.3934 1.3934C20.8076 1.97918 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z"
-              fill="#797979" />
-          </svg>
-        </div>
-      </div>
-      <div class="arrivals_card">
-        <img class="arrivals_card_img" src="images/arrivals_2.png" alt="arrivals">
-        <div class="arrivals_card_flex">
-          <div class="arrivals_card_title">
-            Coats & Parkas
-            <br>
-            <span class="arrivals_card_subtitle">Explore Now!</span>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 34 24" fill="none">
-            <path
-              d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807612 21.9792 0.807612 21.3934 1.3934C20.8076 1.97918 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z"
-              fill="#797979" />
-          </svg>
-        </div>
-      </div>
-      <div class="arrivals_card">
-        <img class="arrivals_card_img" src="images/arrivals_3.png" alt="arrivals">
-        <div class="arrivals_card_flex">
-          <div class="arrivals_card_title">
-            Tees & T-Shirt
-            <br>
-            <span class="arrivals_card_subtitle">Explore Now!</span>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 34 24" fill="none">
-            <path
-              d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807612 21.9792 0.807612 21.3934 1.3934C20.8076 1.97918 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z"
-              fill="#797979" />
-          </svg>
-        </div>
-      </div>
-
-    </div>
-  </main>
-
-
-  <div id="shop_now">
-    <img id="shop_now_img" src="images/payday.png" alt="Payday">
-
-    <div id="shop_now_right">
-      <div id="shop_now_title">
-        PAYDAY<br>
-        SALE NOW
-      </div>
-      <div id="shop_now_subtitle">
-        Spend minimal $100 get 30% off<br>
-        voucher code for your next purchase<br>
-        <br>
-        <span>1 June - 10 June 2021</span><br>
-        *Terms & Conditions apply
-
-
-
-      </div>
-      <div class="btn">
-        SHOP NOW
-      </div>
     </div>
   </div>
 
 
 
-  <main>
-    <div id="favorite_title">Young’s Favourite</div>
-    <div id="favorite">
-      <div class="favorite_card">
-        <img class="favorite_card_img" src="images/young_1.png" alt="young">
-        <div class="favorite_card_flex">
-          <div class="favorite_card_title">
-            Trending on instagram
-            <br>
-            <span class="favorite_card_subtitle">Explore Now!</span>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 34 24" fill="none">
+
+
+  <div class="main">
+
+
+    <div id="young_title">
+      Young's Favorite
+      <svg id="young_svg" width="120" height="25" viewBox="0 0 186 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M84 3.97549C65.3333 8.30883 22.4 19.9755 0 31.9755C56.6667 37.3088 173.2 39.1755 186 3.97549C168 0.975492 122.4 -3.22451 84 3.97549Z"
+          fill="#EBD96B"></path>
+      </svg>
+
+    </div>
+
+      <div id="young_inside">
+
+        <div class="young_card">
+          <img class="young_inside_img" src="images/young_1.png" alt="UTM fashion">
+
+          <div class="young_card_text">
+            <div class="young_card_text_left">
+              <span class="young_card_text_left_top">Trending on Instagram</span>
+              <span class="young_card_text_left_bottom">Explore Now!</span>
+            </div>
+          
+          <svg style="fill: #000;" width="1em" height="16" viewBox="0 0 34 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807612 21.9792 0.807612 21.3934 1.3934C20.8076 1.97918 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z"
-              fill="#797979" />
+              d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z">
+            </path>
           </svg>
         </div>
       </div>
 
-      <div class="favorite_card">
-        <img class="favorite_card_img" src="images/young_2.png" alt="young">
-        <div class="favorite_card_flex">
-          <div class="favorite_card_title">
-            All Under $40
-            <br>
-            <span class="favorite_card_subtitle">Explore Now!</span>
+      <div class="young_card">
+        <img class="young_inside_img" src="images/young_2.png" alt="UTM fashion">
+
+        <div class="young_card_text">
+          <div class="young_card_text_left">
+            <span class="young_card_text_left_top">All Under $40</span>
+            <span class="young_card_text_left_bottom">Explore Now!</span>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 34 24" fill="none">
-            <path
-              d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807612 21.9792 0.807612 21.3934 1.3934C20.8076 1.97918 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z"
-              fill="#797979" />
-          </svg>
-        </div>
+        
+        <svg style="fill: #000;" width="1em" height="16" viewBox="0 0 34 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z">
+          </path>
+        </svg>
       </div>
-
+    
 
     </div>
-  </main>
-
-  <main id="app">
-    <div id="app_left">
-      <div id="app_h1">
-        DOWNLOAD APP &
-        GET THE VOUCHER!
-      </div>
-
-      <div id="app_h2">
-        Get 30% off for first transaction using
-        Rondovision mobile app for now.
-      </div>
-      <div>
-        <img class="app_btn" src="images/appstore.png" alt="App Store">
-        <img class="app_btn" src="images/googleplay.png" alt="Google Play">
-      </div>
-    </div>
-    <img id="app_img" src="images/app.png" alt="App">
-  </main>
 
 
-
-  <div id="subscribe">
-    <div id="subscribe_h1">
-      JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
-    </div>
-    <div id="subscribe_h2">
-      Type your email down below and be young wild generation
-    </div>
-
-    <div id="subscribe_form">
-      <input id="subscribe_input" type="text" placeholder="Add your email here">
-      <div class="btn" id="subscribe_btn">SEND</div>
-    </div>
   </div>
-
+  </div>
 
   <footer>
-    <div class="footer_div">
+    <div class="main">
+      <div class="main" id="footer_inside">
 
-      <div id="footer_h1">
-        UTM <span id="footer_logo_bold">FASION</span>
-      </div>
-      <div id="footer_h2">
-        Complete your style with awesome clothes from us.
-      </div>
-      <div id="footer_icons">
-        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
-          <rect y="0.396484" width="52" height="52" rx="15" fill="#EBD96B" />
-          <path
-            d="M31.5122 27.459L32.2065 22.9346H27.8652V19.9985C27.8652 18.7607 28.4717 17.5542 30.416 17.5542H32.3896V13.7021C32.3896 13.7021 30.5986 13.3965 28.8862 13.3965C25.311 13.3965 22.9741 15.5635 22.9741 19.4863V22.9346H19V27.459H22.9741V38.3965H27.8652V27.459H31.5122Z"
-            fill="black" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
-          <rect y="0.396484" width="52" height="52" rx="15" fill="#EBD96B" />
-          <path
-            d="M25.946 20.7273C22.8406 20.7273 20.3357 23.2322 20.3357 26.3376C20.3357 29.4431 22.8406 31.948 25.946 31.948C29.0515 31.948 31.5564 29.4431 31.5564 26.3376C31.5564 23.2322 29.0515 20.7273 25.946 20.7273ZM25.946 29.9851C23.9392 29.9851 22.2986 28.3494 22.2986 26.3376C22.2986 24.3259 23.9343 22.6902 25.946 22.6902C27.9578 22.6902 29.5935 24.3259 29.5935 26.3376C29.5935 28.3494 27.9529 29.9851 25.946 29.9851V29.9851ZM33.0945 20.4978C33.0945 21.2253 32.5085 21.8064 31.7859 21.8064C31.0584 21.8064 30.4773 21.2205 30.4773 20.4978C30.4773 19.7751 31.0632 19.1892 31.7859 19.1892C32.5085 19.1892 33.0945 19.7751 33.0945 20.4978ZM36.8103 21.8259C36.7273 20.073 36.3269 18.5203 35.0427 17.241C33.7634 15.9617 32.2107 15.5613 30.4578 15.4734C28.6511 15.3708 23.2361 15.3708 21.4294 15.4734C19.6814 15.5564 18.1287 15.9568 16.8445 17.2361C15.5603 18.5154 15.1648 20.0681 15.0769 21.821C14.9744 23.6277 14.9744 29.0427 15.0769 30.8494C15.1599 32.6023 15.5603 34.155 16.8445 35.4343C18.1287 36.7136 19.6765 37.114 21.4294 37.2019C23.2361 37.3044 28.6511 37.3044 30.4578 37.2019C32.2107 37.1189 33.7634 36.7185 35.0427 35.4343C36.322 34.155 36.7224 32.6023 36.8103 30.8494C36.9128 29.0427 36.9128 23.6326 36.8103 21.8259V21.8259ZM34.4763 32.7878C34.0955 33.7449 33.3582 34.4822 32.3962 34.8679C30.9558 35.4392 27.5378 35.3074 25.946 35.3074C24.3542 35.3074 20.9314 35.4343 19.4958 34.8679C18.5388 34.4871 17.8015 33.7498 17.4158 32.7878C16.8445 31.3474 16.9763 27.9294 16.9763 26.3376C16.9763 24.7458 16.8494 21.323 17.4158 19.8875C17.7966 18.9304 18.5339 18.1931 19.4958 17.8074C20.9363 17.2361 24.3542 17.3679 25.946 17.3679C27.5378 17.3679 30.9607 17.241 32.3962 17.8074C33.3533 18.1882 34.0906 18.9255 34.4763 19.8875C35.0476 21.3279 34.9158 24.7458 34.9158 26.3376C34.9158 27.9294 35.0476 31.3523 34.4763 32.7878Z"
-            fill="black" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
-          <rect y="0.396484" width="52" height="52" rx="15" fill="#EBD96B" />
-          <path
-            d="M38.4302 21.4567C38.446 21.6788 38.446 21.9009 38.446 22.123C38.446 28.8964 33.2906 36.701 23.868 36.701C20.9651 36.701 18.2684 35.8603 16 34.4009C16.4125 34.4485 16.809 34.4644 17.2373 34.4644C19.6326 34.4644 21.8375 33.6554 23.5983 32.2753C21.3458 32.2277 19.4581 30.7524 18.8077 28.722C19.125 28.7695 19.4422 28.8013 19.7754 28.8013C20.2354 28.8013 20.6955 28.7378 21.1237 28.6268C18.776 28.1509 17.0152 26.0887 17.0152 23.5982V23.5348C17.6973 23.9155 18.4905 24.1535 19.3312 24.1852C17.9511 23.2651 17.0469 21.6947 17.0469 19.918C17.0469 18.9663 17.3007 18.0938 17.7449 17.3324C20.2671 20.4415 24.0583 22.4719 28.3096 22.694C28.2303 22.3133 28.1827 21.9168 28.1827 21.5202C28.1827 18.6966 30.4669 16.3965 33.3064 16.3965C34.7816 16.3965 36.1141 17.0151 37.05 18.0145C38.208 17.7924 39.3184 17.3641 40.302 16.7772C39.9212 17.9669 39.1122 18.9663 38.0494 19.6008C39.0805 19.4898 40.0799 19.2042 40.9999 18.8077C40.3021 19.8229 39.4295 20.727 38.4302 21.4567V21.4567Z"
-            fill="black" />
-        </svg>
+
+        <div class="footer_div">
+
+          <div id="footer_h1">
+            UTM <span id="footer_logo_bold">FASION</span>
+          </div>
+          <div id="footer_h2">
+            Complete your style with awesome clothes from us.
+          </div>
+          <div id="footer_icons">
+            <svg class="text-2xl fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="1em"
+              height="1em">
+              <path
+                d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z">
+              </path>
+            </svg>
+            <svg class="text-2xl fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="1em"
+              height="1em">
+              <path
+                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+              </path>
+            </svg>
+            <svg class="text-2xl fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="1em"
+              height="1em">
+              <path
+                d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z">
+              </path>
+            </svg>
+            <svg class="text-2xl fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="1em"
+              height="1em">
+              <path
+                d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+        <div id="footer_right">
+
+          <div>
+            <div class="footer_title">Company</div>
+            <div>About</div>
+            <div>Contact us</div>
+            <div>Support</div>
+            <div>Careers</div>
+
+          </div>
+          <div>
+            <div class="footer_title">Quick Link</div>
+            <div>Share Location</div>
+            <div>Orders Tracking</div>
+            <div>Size Guide</div>
+            <div>FAQs</div>
+
+          </div>
+          <div>
+            <div class="footer_title">Legal</div>
+            <div>Terms & conditions</div>
+            <div>Privacy Policy</div>
+
+          </div>
+        </div>
       </div>
     </div>
-
-    <div id="footer_right">
-
-      <div>
-        <div class="footer_title">Company</div>
-        <div>About</div>
-        <div>Contact us</div>
-        <div>Support</div>
-        <div>Careers</div>
-
-      </div>
-      <div>
-        <div class="footer_title">Quick Link</div>
-        <div>Share Location</div>
-        <div>Orders Tracking</div>
-        <div>Size Guide</div>
-        <div>FAQs</div>
-
-      </div>
-      <div>
-        <div class="footer_title">Legal</div>
-        <div>Terms & conditions</div>
-        <div>Privacy Policy</div>
-
-      </div>
-    </div>
-
   </footer>
 
 </body>
