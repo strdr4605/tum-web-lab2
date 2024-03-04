@@ -38,6 +38,12 @@ nav {
     border-bottom: 2px solid white;
 }
 
+@media screen and (max-width: 600px) {
+    .hide-on-small-screen {
+      display: none; /* Hide the nav links on small screens */
+    }
+  }
+
 a {
     text-decoration: none;
     color: inherit;
