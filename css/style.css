@@ -541,6 +541,32 @@ color: #fff;
 }
 
 
+#mascot_text{
+  position: fixed;
+  right: 140px;
+  bottom: 270px;
+  width: 250px;
+  /*Adjustasneeded*/height: auto;
+  z-index: 1000;
+  /*Ensuresitstaysontop*/color: #000;
+  background:#fff;
+  padding: 5px 10px;
+  width: 190px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400px;
+  display: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#mascot:hover + #mascot_text{
+  display: block;
+}
+
 @media (max-width:1300px) {
   .companies_logos_img {
     height: 40px;
@@ -702,4 +728,27 @@ footer{
   padding-right: 30px;
   box-sizing: border-box;
 }
+
+
+#hero_img{
+max-width: 80vw;
+}
+
+
+#app_img{
+max-width: 90vw;
+margin-right: auto;
+margin-right: auto;
+}
+
+#subscribe_input{
+  max-width: 30vw
+}
+}
+
+
+@media (max-width:400px) {
+  .hide_on_small{
+    display: none;
+  }
 }
