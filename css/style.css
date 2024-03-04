@@ -482,6 +482,65 @@ color: #fff;
 }
 
 
+
+
+
+#mascot {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 200px; /* Adjust as needed */
+  height: auto;
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+/* Enhanced shake animation for greater visibility */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-20px); }
+  20%, 40%, 60%, 80% { transform: translateX(20px); }
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Fade in and fade out animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Updated animations with animation-fill-mode for compatibility */
+#mascot.shake {
+  animation: shake 0.8s ease-in-out;
+  animation-fill-mode: both; /* Keeps the element in the final state of animation */
+}
+
+#mascot.pulse {
+  animation: pulse 2s infinite;
+  animation-fill-mode: both;
+}
+
+#mascot.fadeIn {
+  animation: fadeIn 2s ease-in-out;
+  animation-fill-mode: forwards; /* Ensures the element remains visible after fading in */
+}
+
+#mascot.fadeOut {
+  animation: fadeOut 2s ease-in-out;
+  animation-fill-mode: forwards; /* Ensures the element remains hidden after fading out */
+}
+
+
 @media (max-width:1300px) {
   .companies_logos_img {
     height: 40px;
