@@ -343,6 +343,94 @@ height: 60px;
 }
 
 
+#subscribe{
+  width: 100%;
+  background-color: #facc15;
+  padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#subscribe_text{
+  font-weight: 500;
+color: #fff;
+font-size: 2.25rem;
+line-height: 2.5rem;
+    font-family: Poppins;
+  font-weight: 700;
+  
+  max-width: 36rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+#subscribe_subtext{
+  font-weight: 500;
+color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-family: Poppins;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+
+  margin-bottom: 30px;
+  
+}
+
+#subscribe_inside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#subscribe_form{
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 0.5rem ;
+  -webkit-border-radius: 0.5rem ;
+  -moz-border-radius: 0.5rem ;
+  -ms-border-radius: 0.5rem ;
+  -o-border-radius: 0.5rem ;
+  padding: 0.5rem;
+}
+
+.subscribe_form_btn{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: normal;
+    padding: 10px 30px;
+    color: #fff !important;
+    font-family: Poppins;
+    border-radius: 5px;
+    background: rgb(31 41 55);
+    border: 1px solid transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#subscribe_input{
+  padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: transparent;
+    font-family: Poppins;
+    color: #f1f1f1;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    border-radius: 5px;
+    font-size: 1rem;
+
+   
+}
+
 
 
 @media (max-width:1300px) {
