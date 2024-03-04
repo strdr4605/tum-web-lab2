@@ -1,9 +1,12 @@
-# Lab 2 - Landing page
 
-## Lab work 2, TUM-FAF 212 Cristian Brinza  Spring 2024 Web Programing
+<p align='center' > Visit the <a href="https://cristianbrinza.github.io/tum-web-lab2/" >cristianbrinza.github.io/tum-web-lab2/</a> website.</p>
+
+# Lab 2+3 - Landing page
+
+## Lab work 2+3, TUM-FAF 212 Cristian Brinza  Spring 2024 Web Programing
 Web Programming Laboratory Project: Front-End Landing Page 
 
-Welcome to the Web Programming Laboratory project series! This repository contains the code for the first task of the semester, which focuses on creating a front-end landing page using HTML and CSS.
+Welcome to the Web Programming Laboratory project series! This repository contains the code for the first task of the semester, which focuses on creating a front-end landing page using HTML, CSS and JS.
 
 
 ## Overview
@@ -33,6 +36,34 @@ In this laboratory session, we focused on developing a basic front-end landing p
 - HTML file(s) containing the structure of the landing page.
 - CSS file(s) for styling the page.
 - Any additional assets used in the project (images, fonts, etc.).
+
+## Dev requirements (lab3)
+
+- Use vanilla CSS and HTML (no frameworks)
+- Have a decent git history (no one commit)
+- The page with mascot and responsive design should be deployed on a live link
+
+
+## Customer requirements (lab 3)
+
+- Some of our clients view the landing page on mobile devices (please make the landing page responsive)
+  - All elements' sizes should be adjusted for desktop/mobile view. `3 Points`
+  - Call to action should be visible on mobile `1 Point`
+  - There should be mobile-only elements (example: a section, a title, an image) `1 Point`
+    
+- We need a mascot for our page similar to Microsoft Clippy, the mascot should:
+  - be related to the topic of the landing page `0.4 Points`
+  - be friendly/pleasant to the eyes (can be an image or an SVG) `1 Point`
+  - appear on the page after some delay on corners or borders of the page `1 Point`
+  - be animated (rotating, tilting, jumping, walking) `1.4 Points`
+  - display a welcome/CTA/info message when hovering with the mouse `1 Point`
+
+
+## Links
+
+- https://css-tricks.com/a-complete-guide-to-css-media-queries/
+- https://www.w3schools.com/css/css3_animations.asp
+- https://css-tricks.com/almanac/properties/a/animation/
 
 
 ## Getting Started
