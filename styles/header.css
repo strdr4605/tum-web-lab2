@@ -97,3 +97,16 @@
   font-size: 16px;
   font-style: normal;
 }
+
+@media all and (max-width: 1060px) {
+  .log-in-button,
+  .register-button,
+  .header-menu {
+    display: none;
+  }
+
+  .header {
+    align-items: center;
+    justify-content: center;
+  }
+}
