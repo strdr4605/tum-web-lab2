@@ -9,4 +9,11 @@ a {
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
