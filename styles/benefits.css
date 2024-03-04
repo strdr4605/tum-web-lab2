@@ -1,6 +1,7 @@
 .benefits {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding: 90px 0 90px 90px;
 }
 
@@ -16,8 +17,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  min-width: 500px;
-  max-width: 600px;
+  /* min-width: 200px;
+  max-width: 600px; */
+  width: 60%;
   margin-right: 30px;
 }
 
@@ -62,6 +64,7 @@
   background-color: #545be8;
   padding: 20px;
   width: 300px;
+  max-height: 300px;
 }
 
 .benefits .perk-name {
@@ -79,4 +82,83 @@
   font-style: normal;
   font-weight: 300;
   line-height: 25px;
+}
+
+@media all and (max-width: 765px) and (max-width: 1160px) {
+  .intro-to-benefits {
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 1160px) {
+  .intro-to-benefits .description {
+    font-size: 13.7px;
+    line-height: 22.9px;
+  }
+}
+
+@media all and (max-width: 765px) {
+  .intro-to-benefits {
+    margin: 0;
+  }
+  .benefits {
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 0px 90px 0px;
+  }
+
+  .intro-to-benefits {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+  }
+
+  .benefit-box {
+    width: 250px;
+    max-height: none;
+  }
+
+  .benefit-enum {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 400px) and (max-width: 765px) {
+  .benefits .perk-description {
+    font-size: 13px;
+  }
+
+  .intro-to-benefits .intro-message {
+    font-size: 18px;
+  }
+
+  .intro-to-benefits .description {
+    font-size: 13.7px;
+    line-height: 22.9px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .benefits {
+    margin: 0;
+  }
+
+  .benefits .perk-description {
+    font-size: 13px;
+  }
+
+  .intro-to-benefits .intro-message {
+    font-size: 18px;
+  }
+
+  .intro-to-benefits .proposal-message {
+    font-size: 21.9px;
+    line-height: 31.3px;
+  }
+
+  .benefit-box {
+    width: 200px;
+    max-height: none;
+  }
 }
