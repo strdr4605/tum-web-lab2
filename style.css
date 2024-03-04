@@ -134,7 +134,7 @@ a {
 }
 
 .about-text{
-    width: 450px;
+    width: 40%;
     position: absolute;
     color: white;
     top: 150px;
@@ -313,7 +313,7 @@ a {
     position: absolute;
     padding-top: 30px;
     left: 25%;
-    width: 770px;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -375,7 +375,7 @@ a {
 
 .footer{
     background-color: black;
-    height: 550px;
+    height: 100%;
 
 
 }
@@ -416,13 +416,15 @@ a {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    
 }
 
 .Email,
 .Phone{
     margin-top: 30px;
-    margin-right: 40px;
     width: 250px;
     background-color: rgba(23,24,25,255);
 }
@@ -435,6 +437,7 @@ a {
     width: 100%;
     color:white;
     font-size: 15px;
+    padding-bottom: 30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -446,6 +449,31 @@ a {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .t1{
+        margin-bottom: 20px;
+        font-size: calc(16px - 30%);
+        color: rgb(203, 155, 44);
+    }
+    
+    .t2{
+        font-size: calc(50px - 80%);
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+    
+    .t3{
+        color: rgba(255, 255, 255, 0.85);
+        font-size: calc(20px - 50%);
+        margin-bottom: 30px;
+    }
+    
+    .t4{
+        color: rgba(255, 255, 255, 0.8);
+        font-size: calc(18px - 50%);
+        margin-bottom: 30px;
+    }
+}
 @media screen and (max-width: 600px) {
     .hide-on-small-screen {
       display: none; /* Hide the nav links on small screens */
