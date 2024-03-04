@@ -194,11 +194,13 @@ body {
   padding-bottom: 10px;
 }
 
-#buy_happiness p {
+#buy_happiness {
   display: flex;
-  padding: 10px 40px;
   justify-content: center;
-  align-content: center;
+}
+
+#buy_happiness p {
+  padding: 10px 40px;
   text-align: center;
   width: fit-content;
   font-size: 25px;
