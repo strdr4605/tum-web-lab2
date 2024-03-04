@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
 .btn {
@@ -35,10 +36,21 @@ body {
 .topnav {
   overflow: hidden;
   background-color: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+
+}
+#call{
+  display: none;
 }
 
+#topnav_outside{
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
 
 .topnav a {
   float: left;
@@ -583,6 +595,16 @@ footer{
     gap: 20px;
 }
 
+
+
+#call{
+  display: block;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+
 }
 @media (max-width:650px) {
 
@@ -611,7 +633,7 @@ footer{
 }
 
 
-.footer_div, .footer_h2 {
+.footer_div, #footer_h2 {
   align-items: center;
 
 }
