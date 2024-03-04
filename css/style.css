@@ -752,3 +752,18 @@ margin-right: auto;
     display: none;
   }
 }
+
+
+@media (max-width:350px) {
+  #mascot_text{
+    right: 80px;
+    bottom: 270px;
+  }
+}
+
+@media (max-width:300px) {
+  #mascot_text{
+    right: 40px;
+    bottom: 270px;
+  }
+}
