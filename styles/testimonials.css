@@ -77,3 +77,21 @@
   color: #646464;
   margin-top: 10px;
 }
+
+@media all and (max-width: 650px) {
+  .card-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .testimonials .title {
+    font-size: 21.9px;
+    line-height: 31.3px;
+  }
+
+  .client-comment {
+    font-size: 13.7px;
+    line-height: 22.9px;
+  }
+}
