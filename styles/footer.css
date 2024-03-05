@@ -3,6 +3,13 @@
   flex-direction: column;
   background-color: #393e46;
   padding: 90px;
+  width: 100%;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer p {
@@ -14,8 +21,8 @@
 .footer-left-block {
   display: flex;
   flex-direction: column;
-  width: 500px;
   margin-right: 50px;
+  width: 45%;
 }
 
 .footer .brand-logo {
@@ -26,14 +33,20 @@
   color: #f4f4f4;
 }
 
+.nav-title {
+  line-height: 22.9px;
+}
+
 .brand-info {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+  width: 100%;
 }
 
-.brand-info p {
+.brand-explanation {
   line-height: 24px;
+  width: 100%;
 }
 
 .social-media {
@@ -65,4 +78,65 @@
   background-color: #f4f4f4;
   width: 100%;
   margin: 60px 0 30px;
+}
+
+.copyright-and-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media all and (max-width: 1040px) {
+  .footer-right-block {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .footer-right-block {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .footer-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-right-block {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  .footer-left-block {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .copyright-and-links {
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media all and (max-width: 460px) {
+  .footer-right-block {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 40px 60px 40px 60px;
+  }
+
+  .footer .brand-logo {
+    justify-content: center;
+  }
 }
