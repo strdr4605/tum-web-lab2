@@ -1,6 +1,7 @@
 .preview-courses {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding: 90px 90px 70px 90px;
 }
 
@@ -10,10 +11,12 @@
   column-gap: 30px;
   row-gap: 30px;
   margin-right: 60px;
+  justify-items: center;
+  align-items: center;
 }
 
 .course-box {
-  width: 328px;
+  max-width: 328px;
   height: 345.08px;
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
@@ -97,14 +100,17 @@
   margin-bottom: 15px;
 }
 
-.courses-benefits {
+.courses-benefits,
+.courses-benefits-upper {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-right: 30px;
+  max-width: 1400px;
 }
 
-.courses-benefits .intro-message {
+.courses-benefits .intro-message,
+.courses-benefits-upper .intro-message {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -112,7 +118,8 @@
   color: #545be8;
 }
 
-.courses-benefits .proposal-message {
+.courses-benefits .proposal-message,
+.courses-benefits-upper .proposal-message {
   font-weight: 700;
   font-size: 40px;
   font-style: normal;
@@ -120,10 +127,105 @@
   color: #141e32;
 }
 
-.courses-benefits .description {
+.courses-benefits .description,
+.courses-benefits-upper .description {
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 30px;
   color: #969696;
+}
+
+.courses-benefits-upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+.courses-benefits-upper .description {
+  text-align: center;
+}
+
+@media all and (min-width: 1170px) {
+  .courses-benefits-upper {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1170px) {
+  .courses-benefits-upper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .preview-courses {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .courses-benefits {
+    display: none;
+  }
+
+  .courses-list {
+    margin: 0;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 1160px) {
+  .courses-benefits-upper .description {
+    font-size: 13.7px;
+    line-height: 22.9px;
+  }
+}
+
+@media all and (max-width: 860px) {
+  .courses-list {
+    grid-template-columns: 1fr;
+  }
+
+  .courses-benefits-upper .description {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 765px) {
+  .img-box img {
+    width: 100%;
+  }
+  .preview-courses {
+    padding: 90px 0 0 0;
+    margin: 0 50px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .courses-benefits-upper .proposal-message {
+    font-size: 21.9px;
+    line-height: 31.3px;
+  }
+
+  .courses-list {
+    width: 100%;
+  }
+
+  .course-box {
+    width: auto;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .course-box {
+    max-height: 300px;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .courses-list {
+    margin-left: -15px;
+  }
 }
