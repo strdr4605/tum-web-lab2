@@ -1,6 +1,7 @@
 .about-us {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   background: linear-gradient(
     0deg,
     rgba(39, 45, 176, 1) 0%,
@@ -15,6 +16,7 @@
   gap: 30px;
   margin-left: 40px;
   margin-top: 50px;
+  width: 57%;
 }
 
 .about-us .title {
@@ -61,9 +63,10 @@
 }
 
 .statistics {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 30px;
 }
 
 .metric {
@@ -71,4 +74,129 @@
   flex-direction: column;
   align-items: center;
   gap: 3px;
+}
+
+.about-us-img {
+  /* scale: 90%; */
+  margin-top: 50px;
+  width: 100%;
+}
+
+.about-us-img-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media all and (min-width: 765px) and (max-width: 1300px) {
+  .statistics {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  .metric:nth-child(3) {
+    grid-column: span 2;
+    justify-self: center;
+  }
+}
+
+@media all and (max-width: 1160px) {
+  .metric {
+    gap: 10px;
+  }
+
+  .about-us p,
+  .about-us .course-description {
+    font-size: 14px;
+    line-height: 22.9px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .about-us .number {
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+  }
+}
+
+@media all and (max-width: 765px) {
+  .about-us {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about-us .description {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 765px) {
+  .statistics {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media all and (min-width: 400px) and (max-width: 620px) {
+  .statistics {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  .metric:nth-child(3) {
+    grid-column: span 2;
+    justify-self: center;
+  }
+}
+
+@media all and (min-width: 400px) and (max-width: 765px) {
+  .about-us .course-description {
+    font-size: 14px;
+    line-height: 22.9px;
+  }
+
+  .about-us .title {
+    font-size: 18px;
+  }
+
+  .about-us-img,
+  .about-us-img-box {
+    display: none;
+  }
+
+  .about-us .description {
+    margin: 0px 50px 0px 50px;
+    min-width: 284px;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .about-us-img,
+  .about-us-img-box {
+    display: none;
+  }
+
+  .statistics {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us .description {
+    margin: 0px 50px 0px 50px;
+    min-width: 200px;
+    width: 100%;
+  }
+
+  .about-us .headline {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 21.9px;
+    line-height: 31.3px;
+    font-style: normal;
+    color: #ffffff;
+  }
+
+  .about-us .course-description {
+    font-size: 13px;
+  }
 }
