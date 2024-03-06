@@ -50,3 +50,17 @@
     bottom: 20px;
   } /* Resting phase */
 }
+
+@media all and (max-width: 1100px) {
+  .mascot {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .mascot {
+    width: 100px;
+    height: 100px;
+  }
+}
