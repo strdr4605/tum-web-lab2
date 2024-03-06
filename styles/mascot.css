@@ -6,22 +6,47 @@
   position: fixed;
   bottom: 20px;
   right: 0px;
+  opacity: 0;
+  animation: fade-in 2s ease-out forwards, jump-and-rest 2.5s infinite;
+  animation-delay: 4s, 7s;
   cursor: pointer;
 }
 
 .mascot .message {
   display: none;
   position: absolute;
-  bottom: 110%;
-  right: 0;
+  bottom: 90%;
+  right: 140px;
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 10px;
   width: 200px;
   text-align: center;
   border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  line-height: 22.9px;
 }
 
 .mascot:hover .message {
   display: block;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes jump-and-rest {
+  0%,
+  25% {
+    bottom: 20px;
+  } /* Initial position and end of jump */
+  12.5% {
+    bottom: 100px;
+  } /* Peak of the jump */
+  25.01%,
+  100% {
+    bottom: 20px;
+  } /* Resting phase */
 }
