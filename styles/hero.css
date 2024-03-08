@@ -38,7 +38,8 @@
   font-weight: 700;
 }
 
-.hero-subline {
+.hero-subline,
+.hero-subline-mobile {
   font-weight: 700;
   font-size: 64px;
   font-style: normal;
@@ -46,7 +47,8 @@
   line-height: 90px;
 }
 
-.hero-subline .blue {
+.hero-subline .blue,
+.hero-subline-mobile .blue {
   color: #545be8;
 }
 
@@ -113,12 +115,22 @@
   display: none;
 }
 
+@media (max-width: 766px) {
+  .hero-subline {
+    display: none;
+  }
+}
+
 @media (min-width: 766px) {
   .text-join {
     display: none;
   }
   .text-enroll {
     display: inline;
+  }
+
+  .hero-subline-mobile {
+    display: none;
   }
 }
 
@@ -206,7 +218,7 @@
     width: 100%;
   }
 
-  .hero-subline {
+  .hero-subline-mobile {
     font-size: 48.8px;
     line-height: 68.6px;
   }
@@ -218,7 +230,7 @@
 }
 
 @media all and (max-width: 400px) {
-  .hero-subline {
+  .hero-subline-mobile {
     font-size: 35px;
     line-height: 50px;
     text-align: center;
