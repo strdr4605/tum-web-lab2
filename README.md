@@ -17,10 +17,10 @@ Click the following links to see screenshots.
 - [Footer](images/footer.png)
 - [Login](images/login.png)/[Signup](images/signup.png) (redirect to another page)
 
-## Demo
+## Demo Video
 
 Check this [link](https://youtu.be/rsWEIlL_Jd0) to see demo.
 
-## Deploy
+## Live Link
 
 Access this [link](https://tum-web-lab2-black.vercel.app/) to see CourseMe app in action!
