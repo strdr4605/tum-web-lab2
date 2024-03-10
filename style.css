@@ -440,6 +440,57 @@ a {
     padding-bottom: 30px;
 }
 
+#mascot-container {
+    position: fixed;
+    opacity: 0;
+    z-index: 999;
+    bottom: 10%; 
+    right: 4%;
+    animation: mascotAnimation 4s infinite alternate; /* Define animation */
+    animation: mascotFall 0.5s ease-in 5s 1 normal both;
+    cursor: pointer;
+}
+
+#mascot {
+    width: 100px;
+    height: auto;
+}
+
+#mascot-message {
+    display: none; /* Hide message by default */
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+}
+
+#mascot-container:hover #mascot-message {
+    display: block;
+}
+
+@keyframes mascotFall{
+    from{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Define animation keyframes */
+@keyframes mascotAnimation {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(7deg); }
+    100% { transform: rotate(0deg); }
+}
+
 @media screen and (max-width: 1200px) {
     .start_img{
         width: 1200px;
@@ -475,6 +526,10 @@ a {
     }
 }
 @media screen and (max-width: 600px) {
+    #mascot-container {
+        display: none;
+    }
+    
     .hide-on-small-screen {
       display: none; /* Hide the nav links on small screens */
     }

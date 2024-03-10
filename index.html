@@ -1,295 +1,309 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script>
-      window.onload = () => {
-        let arr = []
-        for(let i = 1; i < 4; i++){
-          arr.push(document.getElementById('c' + i.toString()))
-        }
-        
-        for(let i = 0; i < 3; i++){
-          arr[i].addEventListener('mouseover', () => {
-            arr[(i + 1) % 3].style.opacity = 0.5;
-            arr[(i + 2) % 3].style.opacity = 0.5;
-          });
-          arr[i].addEventListener('mouseout', () => {
-            arr[(i + 1) % 3].style.opacity = 1;
-            arr[(i + 2) % 3].style.opacity = 1;
-          });
-        }
-      };
-    </script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul class="nav_list">
-          <li class="hide-on-small-screen"><a href="#About", class="nav_link">About Us</a></li>
-          <li><a href="#Services", class="nav_link">Services</a></li>
-          <li class="hide-on-small-screen"><a href="#Team", class="nav_link">Team</a></li>
-          <li><a href="#Gallery", class="nav_link">Gallery</a></li>
-          <li><a href="#Contacts", class="nav_link">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="intro">
-        <img src="images/orig.jpg" class="start_img">
-        <div class="fade-overlay"></div>
-        <div class="description">
-          <img src="images/logo.png" class="logo">
-          <div>It's about attitude. The attitude of the real man.</div>
-          <div class="address_text">Bulevard James Joyce 7, Sector Buiucani, Chisinau</div>
-        </div>
-      </div>   
-      <section id="Gallery">
-          <div class="overlay"></div>
-          <div class="photos">
-            <img src="images/gal1.jpeg" class="gal1">
-            <img src="images/gal2.jpg" class="gal1">
-            <img src="images/gal3.jpeg" class="gal1">
-          </div>
-      </section>
-      <section id="About">
-        <div class="fade-overlay-about"></div>
-        <img src="images/about.jpg" class="about_img">
-        <div class="about-text">
-          <div class="t1">About Us</div>
-          <div class="t2">The place where you will feel indulged</div>
-          <div class="t3">Lincoln Barbershop has been open since summer 2020 and is one of the most modern barbershops in the country. 
-            With us you can find a wide range of services, the goal being to see you satisfied and fulfilled, from a moral and financial point of view. 
-            Come and spend your time in a pleasant and relaxed way, with the most positive barbers.
-          </div>
-          <div class="t4">At Lincoln Barbershop you don't have time to be bored, xbox games, mafia, uno and much more.</div>
-          <div class="t4">Do not hesitate to try, come to give yourself the best haircut at an affordable price. Our team of barbers is waiting for you 
-            with the greatest love. We are located on 10/1 Kiev street, Rîșcani sector, and on 95 Alexandru cel Bun street, Centru sector, Chisinau.
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My landing page</title>
+  <!-- CHANGE THESE VALUES -->
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    window.onload = () => {
+      let arr = []
+      for (let i = 1; i < 4; i++) {
+        arr.push(document.getElementById('c' + i.toString()))
+      }
+
+      for (let i = 0; i < 3; i++) {
+        arr[i].addEventListener('mouseover', () => {
+          arr[(i + 1) % 3].style.opacity = 0.5;
+          arr[(i + 2) % 3].style.opacity = 0.5;
+        });
+        arr[i].addEventListener('mouseout', () => {
+          arr[(i + 1) % 3].style.opacity = 1;
+          arr[(i + 2) % 3].style.opacity = 1;
+        });
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <div id="mascot-container">
+    <img src="images/mascota.png" id="mascot">
+    <div id="mascot-message">Welcome! Need any help?</div>
+  </div>
+
+  <header>
+    <nav>
+      <ul class="nav_list">
+        <li class="hide-on-small-screen"><a href="#About" , class="nav_link">About Us</a></li>
+        <li><a href="#Services" , class="nav_link">Services</a></li>
+        <li class="hide-on-small-screen"><a href="#Team" , class="nav_link">Team</a></li>
+        <li><a href="#Gallery" , class="nav_link">Gallery</a></li>
+        <li><a href="#Contacts" , class="nav_link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <img src="images/orig.jpg" class="start_img">
+      <div class="fade-overlay"></div>
+      <div class="description">
+        <img src="images/logo.png" class="logo">
+        <div>It's about attitude. The attitude of the real man.</div>
+        <div class="address_text">Bulevard James Joyce 7, Sector Buiucani, Chisinau</div>
       </div>
-      </section>
-      <section id="Services">
-        <div class="column" id="c1">
-          <div class="service">
-              <div class="barber-type">Barber</div>
-              <div class="column-header">
-                  <div class="cut-type">Haircut</div>
-                  <div class="price">200 lei</div>
-              </div>
-              <div class="cut-desc">Haircut includes hair washing and final styling</div>
-          </div>
-      
-          <div class="service">
-              <div class="column-header">
-                  <div class="cut-type">Classic Haircut</div>
-                  <div class="price">250 lei</div>
-              </div>
-              <div class="cut-desc">Haircut performed with scissors only</div>
-          </div>
-      
-          <div class="service">
-              <div class="column-header">
-                  <div class="cut-type">Beard Shaping</div>
-                  <div class="price">150 lei</div>
-              </div>
-              <div class="cut-desc">Shaping, outlining, and styling of the beard</div>
-          </div>
-      
-          <div class="service">
-              <div class="column-header">
-                  <div class="cut-type">Complex</div>
-                  <div class="price">350 lei</div>
-              </div>
-              <div class="cut-desc">Complex includes men's haircut and beard shaping</div>
-          </div>
-      
-          <div class="service">
-              <div class="column-header">
-                  <div class="cut-type">Gold Complex</div>
-                  <div class="price">400 lei</div>
-              </div>
-              <div class="cut-desc">Gold Complex includes haircut, beard shaping, and eyebrow shaping</div>
-          </div>
-      </div>
-      
-      <div class="column" id="c2">
-        <div class="service">
-            <div class="barber-type">Barber PRO</div>
-            <div class="column-header">
-                <div class="cut-type">Haircut</div>
-                <div class="price">250 lei</div>
-            </div>
-            <div class="cut-desc">Haircut includes hair washing and final styling</div>
-        </div>
-    
-        <div class="service">
-            <div class="column-header">
-                <div class="cut-type">Classic Haircut</div>
-                <div class="price">300 lei</div>
-            </div>
-            <div class="cut-desc">Haircut performed with scissors only</div>
-        </div>
-    
-        <div class="service">
-            <div class="column-header">
-                <div class="cut-type">Beard Shaping</div>
-                <div class="price">150-200 lei</div>
-            </div>
-            <div class="cut-desc">Shaping, outlining, and styling of the beard</div>
-        </div>
-    
-        <div class="service">
-            <div class="column-header">
-                <div class="cut-type">Complex</div>
-                <div class="price">400 lei</div>
-            </div>
-            <div class="cut-desc">Complex includes men's haircut and beard shaping</div>
-        </div>
-    
-        <div class="service">
-            <div class="column-header">
-                <div class="cut-type">Gold Complex</div>
-                <div class="price">450 lei</div>
-            </div>
-            <div class="cut-desc">Gold Complex includes haircut, beard shaping, and eyebrow shaping</div>
-        </div>
     </div>
-    
-    <div class="column" id="c3">
-      <div class="service">
-          <div class="barber-type">Barber TOP</div>
+    <section id="Gallery">
+      <div class="overlay"></div>
+      <div class="photos">
+        <img src="images/gal1.jpeg" class="gal1">
+        <img src="images/gal2.jpg" class="gal1">
+        <img src="images/gal3.jpeg" class="gal1">
+      </div>
+    </section>
+    <section id="About">
+      <div class="fade-overlay-about"></div>
+      <img src="images/about.jpg" class="about_img">
+      <div class="about-text">
+        <div class="t1">About Us</div>
+        <div class="t2">The place where you will feel indulged</div>
+        <div class="t3">Lincoln Barbershop has been open since summer 2020 and is one of the most modern barbershops in
+          the country.
+          With us you can find a wide range of services, the goal being to see you satisfied and fulfilled, from a moral
+          and financial point of view.
+          Come and spend your time in a pleasant and relaxed way, with the most positive barbers.
+        </div>
+        <div class="t4">At Lincoln Barbershop you don't have time to be bored, xbox games, mafia, uno and much more.
+        </div>
+        <div class="t4">Do not hesitate to try, come to give yourself the best haircut at an affordable price. Our team
+          of barbers is waiting for you
+          with the greatest love. We are located on 10/1 Kiev street, Rîșcani sector, and on 95 Alexandru cel Bun
+          street, Centru sector, Chisinau.
+        </div>
+      </div>
+    </section>
+    <section id="Services">
+      <div class="column" id="c1">
+        <div class="service">
+          <div class="barber-type">Barber</div>
           <div class="column-header">
-              <div class="cut-type">Haircut</div>
-              <div class="price">300 lei</div>
+            <div class="cut-type">Haircut</div>
+            <div class="price">200 lei</div>
           </div>
           <div class="cut-desc">Haircut includes hair washing and final styling</div>
-      </div>
-  
-      <div class="service">
+        </div>
+
+        <div class="service">
           <div class="column-header">
-              <div class="cut-type">Classic Haircut</div>
-              <div class="price">350 lei</div>
+            <div class="cut-type">Classic Haircut</div>
+            <div class="price">250 lei</div>
           </div>
           <div class="cut-desc">Haircut performed with scissors only</div>
-      </div>
-  
-      <div class="service">
+        </div>
+
+        <div class="service">
           <div class="column-header">
-              <div class="cut-type">Beard Shaping</div>
-              <div class="price">200-250 lei</div>
+            <div class="cut-type">Beard Shaping</div>
+            <div class="price">150 lei</div>
           </div>
           <div class="cut-desc">Shaping, outlining, and styling of the beard</div>
-      </div>
-  
-      <div class="service">
+        </div>
+
+        <div class="service">
           <div class="column-header">
-              <div class="cut-type">Complex</div>
-              <div class="price">450 lei</div>
+            <div class="cut-type">Complex</div>
+            <div class="price">350 lei</div>
           </div>
           <div class="cut-desc">Complex includes men's haircut and beard shaping</div>
-      </div>
-  
-      <div class="service">
+        </div>
+
+        <div class="service">
           <div class="column-header">
-              <div class="cut-type">Gold Complex</div>
-              <div class="price">500 lei</div>
+            <div class="cut-type">Gold Complex</div>
+            <div class="price">400 lei</div>
           </div>
           <div class="cut-desc">Gold Complex includes haircut, beard shaping, and eyebrow shaping</div>
+        </div>
       </div>
-  </div>  
+
+      <div class="column" id="c2">
+        <div class="service">
+          <div class="barber-type">Barber PRO</div>
+          <div class="column-header">
+            <div class="cut-type">Haircut</div>
+            <div class="price">250 lei</div>
+          </div>
+          <div class="cut-desc">Haircut includes hair washing and final styling</div>
         </div>
-      </section>
-      <section id="Team">
-        <div class="team-text">
-          <div class="t1">We pride ourselves with the best</div>
-          <div class="heading-text">OUR TEAM</div>
+
+        <div class="service">
+          <div class="column-header">
+            <div class="cut-type">Classic Haircut</div>
+            <div class="price">300 lei</div>
+          </div>
+          <div class="cut-desc">Haircut performed with scissors only</div>
         </div>
-        <div class="team-images">
-          <div class="profile">
-            <a href="https://www.instagram.com/p/CuuCCdztTJt/?next=%2F">
-              <img src="images/1.jpg" class="profile-image">
-            </a>
-            <div class="barber">
-              <div class="type">PRO BARBER</div>
-              <div class="barber-name">MIHAI</div>
-            </div>
+
+        <div class="service">
+          <div class="column-header">
+            <div class="cut-type">Beard Shaping</div>
+            <div class="price">150-200 lei</div>
           </div>
-          <div class="profile">
-            <img src="images/2.jpg" class="profile-image">
-            <div class="barber">
-              <div class="type">TOP BARBER</div>
-              <div class="barber-name">LAURENTIU</div>
-            </div>
+          <div class="cut-desc">Shaping, outlining, and styling of the beard</div>
+        </div>
+
+        <div class="service">
+          <div class="column-header">
+            <div class="cut-type">Complex</div>
+            <div class="price">400 lei</div>
           </div>
-          <div class="profile">
-            <img src="images/3.jpg" class="profile-image">
-            <div class="barber">
-              <div class="type">PRO BARBER</div>
-              <div class="barber-name">MIHAI</div>
-            </div>
+          <div class="cut-desc">Complex includes men's haircut and beard shaping</div>
+        </div>
+
+        <div class="service">
+          <div class="column-header">
+            <div class="cut-type">Gold Complex</div>
+            <div class="price">450 lei</div>
           </div>
-          <div class="profile">
-            <img src="images/4.jpg" class="profile-image">
-            <div class="barber">
-              <div class="type">PRO BARBER</div>
-              <div class="barber-name">MIHAI</div>
-            </div>
+          <div class="cut-desc">Gold Complex includes haircut, beard shaping, and eyebrow shaping</div>
+        </div>
+      </div>
+
+      <div class="column" id="c3">
+        <div class="service">
+          <div class="barber-type">Barber TOP</div>
+          <div class="column-header">
+            <div class="cut-type">Haircut</div>
+            <div class="price">300 lei</div>
           </div>
-          <div class="profile">
-            <img src="images/5.jpg" class="profile-image">
-            <div class="barber">
-              <div class="type">PRO BARBER</div>
-              <div class="barber-name">MIHAI</div>
-            </div>
+          <div class="cut-desc">Haircut includes hair washing and final styling</div>
+        </div>
+
+        <div class="service">
+          <div class="column-header">
+            <div class="cut-type">Classic Haircut</div>
+            <div class="price">350 lei</div>
           </div>
-          <div class="profile">
-            <img src="images/6.jpg" class="profile-image">
-            <div class="barber">
-              <div class="type">PRO BARBER</div>
-              <div class="barber-name">MIHAI</div>
-            </div>
+          <div class="cut-desc">Haircut performed with scissors only</div>
+        </div>
+
+        <div class="service">
+          <div class="column-header">
+            <div class="cut-type">Beard Shaping</div>
+            <div class="price">200-250 lei</div>
           </div>
-          <div class="profile">
-            <img src="images/7.jpg" class="profile-image">
-            <div class="barber">
-              <div class="type">PRO BARBER</div>
-              <div class="barber-name">MIHAI</div>
-            </div>
+          <div class="cut-desc">Shaping, outlining, and styling of the beard</div>
+        </div>
+
+        <div class="service">
+          <div class="column-header">
+            <div class="cut-type">Complex</div>
+            <div class="price">450 lei</div>
           </div>
-          <div class="profile">
-            <img src="images/8.jpeg" class="profile-image">
-            <div class="barber">
-              <div class="type">PRO BARBER</div>
-              <div class="barber-name">MIHAI</div>
-            </div>
+          <div class="cut-desc">Complex includes men's haircut and beard shaping</div>
+        </div>
+
+        <div class="service">
+          <div class="column-header">
+            <div class="cut-type">Gold Complex</div>
+            <div class="price">500 lei</div>
+          </div>
+          <div class="cut-desc">Gold Complex includes haircut, beard shaping, and eyebrow shaping</div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="Team">
+      <div class="team-text">
+        <div class="t1">We pride ourselves with the best</div>
+        <div class="heading-text">OUR TEAM</div>
+      </div>
+      <div class="team-images">
+        <div class="profile">
+          <a href="https://www.instagram.com/p/CuuCCdztTJt/?next=%2F">
+            <img src="images/1.jpg" class="profile-image">
+          </a>
+          <div class="barber">
+            <div class="type">PRO BARBER</div>
+            <div class="barber-name">MIHAI</div>
           </div>
         </div>
-      </section>
-      <section id="Contacts">
-        <div class="info">
-          <div class="wrapper">
-            <div class="t1">Do you need help?</div>
-            <div class="heading-text">CONTACT US</div>
+        <div class="profile">
+          <img src="images/2.jpg" class="profile-image">
+          <div class="barber">
+            <div class="type">TOP BARBER</div>
+            <div class="barber-name">LAURENTIU</div>
           </div>
-          <div class="button-wrapper">
-            <input type="text" placeholder="Name*" class="name">
-            <input type="text" placeholder="Mail*" class="mail">
-            <input type="text" placeholder="Phone*" class="phone">
-            <textarea name="message" rows="10" cols="30" class="comment" placeholder="Comment*">
+        </div>
+        <div class="profile">
+          <img src="images/3.jpg" class="profile-image">
+          <div class="barber">
+            <div class="type">PRO BARBER</div>
+            <div class="barber-name">MIHAI</div>
+          </div>
+        </div>
+        <div class="profile">
+          <img src="images/4.jpg" class="profile-image">
+          <div class="barber">
+            <div class="type">PRO BARBER</div>
+            <div class="barber-name">MIHAI</div>
+          </div>
+        </div>
+        <div class="profile">
+          <img src="images/5.jpg" class="profile-image">
+          <div class="barber">
+            <div class="type">PRO BARBER</div>
+            <div class="barber-name">MIHAI</div>
+          </div>
+        </div>
+        <div class="profile">
+          <img src="images/6.jpg" class="profile-image">
+          <div class="barber">
+            <div class="type">PRO BARBER</div>
+            <div class="barber-name">MIHAI</div>
+          </div>
+        </div>
+        <div class="profile">
+          <img src="images/7.jpg" class="profile-image">
+          <div class="barber">
+            <div class="type">PRO BARBER</div>
+            <div class="barber-name">MIHAI</div>
+          </div>
+        </div>
+        <div class="profile">
+          <img src="images/8.jpeg" class="profile-image">
+          <div class="barber">
+            <div class="type">PRO BARBER</div>
+            <div class="barber-name">MIHAI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Contacts">
+      <div class="info">
+        <div class="wrapper">
+          <div class="t1">Do you need help?</div>
+          <div class="heading-text">CONTACT US</div>
+        </div>
+        <div class="button-wrapper">
+          <input type="text" placeholder="Name*" class="name">
+          <input type="text" placeholder="Mail*" class="mail">
+          <input type="text" placeholder="Phone*" class="phone">
+          <textarea name="message" rows="10" cols="30" class="comment" placeholder="Comment*">
             </textarea>
-            <input type="submit" class="submit" value="Send">
-          </div>
+          <input type="submit" class="submit" value="Send">
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div><iframe class="iframe" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe></div>
-      <div class="cont">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div><iframe class="iframe"
+        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+          href="https://www.gps.ie/">gps tracker sport</a></iframe></div>
+    <div class="cont">
       <div class="Phone">
         <div class="t1g">Phone</div>
         <div class="t22">+373 790 60 882</div>
@@ -300,6 +314,7 @@
       </div>
     </div>
     <div class="end">© 2022 Lincoln Barbershop. Kiev 10/1 , sectorul Rîșcani, Chișinău.</div>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
