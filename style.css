@@ -24,6 +24,17 @@ nav {
     align-items: center;
 }
 
+.nav_link.contact {
+    background-color: rgb(203, 155, 44); 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.nav_link.contact:hover {
+    background-color: rgb(173, 135, 0);
+}
+
 .nav_link{
     font-size: 17px;
     margin-left: 10px;
@@ -446,7 +457,6 @@ a {
     z-index: 999;
     bottom: 10%; 
     right: 4%;
-    animation: mascotAnimation 4s infinite alternate; /* Define animation */
     animation: mascotFall 0.5s ease-in 5s 1 normal both;
     cursor: pointer;
 }
@@ -454,6 +464,7 @@ a {
 #mascot {
     width: 100px;
     height: auto;
+    animation: mascotAnimation 4s infinite alternate; /* Define animation */
 }
 
 #mascot-message {
@@ -484,11 +495,10 @@ a {
     }
 }
 
-/* Define animation keyframes */
 @keyframes mascotAnimation {
-    0% { transform: rotate(0deg); }
-    50% { transform: rotate(7deg); }
-    100% { transform: rotate(0deg); }
+    0% { transform: rotate(0deg);  opacity: 1;}
+    50% { transform: rotate(7deg);  opacity: 1; }
+    100% { transform: rotate(0deg);  opacity: 1;}
 }
 
 @media screen and (max-width: 1200px) {
@@ -529,7 +539,7 @@ a {
     #mascot-container {
         display: none;
     }
-    
+
     .hide-on-small-screen {
       display: none; /* Hide the nav links on small screens */
     }
