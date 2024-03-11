@@ -12,6 +12,7 @@ So they think adding a CSS library/framework will make the development more rapi
  
 ## Dev requirements
 
+- The POC should be done during lab class.
 - The POC with CSS framework should be deployed live, for the customer to test it.
 
 ## Links
