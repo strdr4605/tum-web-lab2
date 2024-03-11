@@ -5,67 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simple Blog</title>
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <a href="#main" for="tab1">Main</a>
-        <a href="#about" for="tab2">About</a>
-        <a href="#weeks-favorites" for="tab3">Contest</a>
-        <a href="#gallery" for="tab5">Gallery</a>
-        <a href="#login" for="tab5">Login</a>
-        <a href="#contacts" for="tab4">Contacts</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Simple Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#main">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#weeks-favorites">Contest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacts</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="space50"></div>
 
-    
-
-    <main>
+    <main class="container">
 
         <section id="main" class="blog-section">
-            <img src="main.jpg" alt="Main Image">        
+            <img src="main.jpg" alt="Main Image" class="img-fluid">        
         </section>
 
         <section id="about" class="blog-section">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="about.jpg" alt="About Image">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="about.jpg" alt="About Image" class="img-fluid rounded">
                 </div>
-                <div class="about-text">
+                <div class="col-md-6">
                     <h2>About Us</h2>
-                    <p> Meoworld is your destination for all things kitten! As the photographer behind the lens, I capture the charm and mischief of these adorable furballs.
-
-                        Join us for daily doses of cuteness and explore the world of kittens through our heartfelt snapshots.
-                        
-                        Paws and whiskers, Meoworid</p>
-                    <a href="#" class="cta-btn">Learn More</a>
+                    <p>Meoworld is your destination for all things kitten! As the photographer behind the lens, I capture the charm and mischief of these adorable furballs. Join us for daily doses of cuteness and explore the world of kittens through our heartfelt snapshots. Paws and whiskers, Meoworid</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
         </section>
         
-        <section id="weeks-favorites" class="blog-section slideshow">
+        <section id="weeks-favorites" class="blog-section">
             <h2>Week's Favorites</h2>
-            <div class="favorites-container">
-                <div class="favorite-item">
-                    <img src="rec1.jpg" alt="Favorite 1">
-                    <p>This adorable kitten stole our hearts this week! Cast your vote below.</p>
-                    <button class="vote-btn">Vote</button>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="rec1.jpg" alt="Favorite 1" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">This adorable kitten stole our hearts this week! Cast your vote below.</p>
+                            <button class="btn btn-primary">Vote</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="favorite-item">
-                    <img src="rec2.jpg" alt="Favorite 2">
-                    <p>This playful little furball brought smiles to our faces! Cast your vote below.</p>
-                    <button class="vote-btn">Vote</button>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="rec2.jpg" alt="Favorite 2" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">This playful little furball brought smiles to our faces! Cast your vote below.</p>
+                            <button class="btn btn-primary">Vote</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="favorite-item">
-                    <img src="rec3.jpg" alt="Favorite 3">
-                    <p>Such elegance and grace! This kitten deserves your vote below.</p>
-                    <button class="vote-btn">Vote</button>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="rec3.jpg" alt="Favorite 3" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Such elegance and grace! This kitten deserves your vote below.</p>
+                            <button class="btn btn-primary">Vote</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="favorite-item">
-                    <img src="rec4.jpg" alt="Favorite 4">
-                    <p>This adventurous kitten explored new heights! Cast your vote below.</p>
-                    <button class="vote-btn">Vote</button>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="rec4.jpg" alt="Favorite 4" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">This adventurous kitten explored new heights! Cast your vote below.</p>
+                            <button class="btn btn-primary">Vote</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -161,12 +193,14 @@
             <div class="mascot"></div>
             <div class="tooltip">Welcome! Hover over me for more information.</div>
         </div>
-        
-        
+    
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Simple Blog. All rights reserved.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
