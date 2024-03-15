@@ -85,6 +85,10 @@ form {
   border-bottom-width: 2px;
 }
 
+.form-control::placeholder {
+  color: #8b8b8b;
+}
+
 .btn.btn-primary.submit-button,
 .btn.btn-primary.submit-button:active,
 .btn.btn-primary.submit-button:hover {
