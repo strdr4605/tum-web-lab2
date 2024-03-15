@@ -48,6 +48,10 @@ header {
   text-align: center;
 }
 
+.form.login header {
+  margin-bottom: 20px;
+}
+
 form {
   margin-top: 30px;
 }
@@ -60,7 +64,7 @@ form {
   border-radius: 6px;
 }
 
-.field input,
+.form-control,
 .field button {
   height: 100%;
   width: 100%;
@@ -70,21 +74,28 @@ form {
   border-radius: 6px;
 }
 
-.field input {
+.form-control {
+  height: 50px;
   outline: none;
   padding: 0 15px;
   border: 1px solid#CACACA;
 }
 
-.field input:focus {
+.form-control input:focus {
   border-bottom-width: 2px;
 }
 
-.field button {
+.btn.btn-primary.submit-button,
+.btn.btn-primary.submit-button:active,
+.btn.btn-primary.submit-button:hover {
+  width: 100%;
+  height: 50px;
   color: #fff;
-  background-color: #545be8;
+  background-color: #545be8 !important;
+  border-color: #545be8 !important;
   transition: all 0.3s ease;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .form-link {
@@ -133,9 +144,12 @@ form {
   justify-content: center;
 }
 
-a.facebook {
+a.facebook,
+a.facebook:hover,
+a.facebook:active {
   color: #fff;
-  background-color: #4267b2;
+  background-color: #4267b2 !important;
+  border-color: #4267b2 !important;
 }
 
 a.facebook .facebook-icon {
@@ -164,8 +178,11 @@ img.google-img {
   object-fit: cover;
 }
 
-a.google {
-  border: 1px solid #cacaca;
+a.google,
+a.google:hover,
+a.google:active {
+  border: 1px solid #cacaca !important;
+  background-color: white !important;
 }
 
 a.google span {
@@ -173,7 +190,6 @@ a.google span {
   opacity: 0.6;
   color: #232836;
 }
-
 .auth-footer {
   display: flex;
   flex-direction: column;
