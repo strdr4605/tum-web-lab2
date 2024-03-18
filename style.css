@@ -7,16 +7,6 @@ body {
     font-family: "Arial", sans-serif;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    color: rgb(255, 255, 255);
-    height: 65px;
-    line-height: 65px;
-    z-index: 1000;
-}
-
 .nav_list {
     display: flex;
     flex-direction: row;
