@@ -8,6 +8,7 @@
   <!-- CHANGE THESE VALUES -->
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     window.onload = () => {
       let arr = []
@@ -282,22 +283,22 @@
         </div>
       </div>
     </section>
-    <section id="Contacts">
+    <section id="Contacts" class="bg-black text-white">
       <div class="info">
         <div class="wrapper">
           <div class="t1">Do you need help?</div>
           <div class="heading-text">CONTACT US</div>
         </div>
         <div class="button-wrapper">
-          <input type="text" placeholder="Name*" class="name">
-          <input type="text" placeholder="Mail*" class="mail">
-          <input type="text" placeholder="Phone*" class="phone">
-          <textarea name="message" rows="10" cols="30" class="comment" placeholder="Comment*">
-            </textarea>
-          <input type="submit" class="submit" value="Send">
+          <input type="text" placeholder="Name*" class="name bg-transparent border-b-2 border-white text-white placeholder-white p-2 mb-4">
+          <input type="text" placeholder="Mail*" class="mail bg-transparent border-b-2 border-white text-white placeholder-white p-2 mb-4">
+          <input type="text" placeholder="Phone*" class="phone bg-transparent border-b-2 border-white text-white placeholder-white p-2 mb-4">
+          <textarea name="message" rows="10" cols="30" class="comment bg-transparent border-b-2 border-white text-white placeholder-white p-2 mb-4" placeholder="Comment*"></textarea>
+          <input type="submit" class="submit bg-yellow-400 hover:bg-yellow-500 hover:border-b-4 border-b-4 border-transparent hover:border-white text-white font-bold py-2 px-4 rounded cursor-pointer" value="Send">
         </div>
       </div>
     </section>
+    
   </main>
   <footer class="footer">
     <div><iframe class="iframe"
