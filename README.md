@@ -1,9 +1,9 @@
 
 <p align='center' > Visit the <a href="https://cristianbrinza.github.io/tum-web-lab2/" >cristianbrinza.github.io/tum-web-lab2/</a> website.</p>
 
-# Lab 2+3 - Landing page
+# Lab 2-4 - Landing page
 
-## Lab work 2+3, TUM-FAF 212 Cristian Brinza  Spring 2024 Web Programing
+## Lab work 2-4, TUM-FAF 212 Cristian Brinza  Spring 2024 Web Programing
 Web Programming Laboratory Project: Front-End Landing Page 
 
 Welcome to the Web Programming Laboratory project series! This repository contains the code for the first task of the semester, which focuses on creating a front-end landing page using HTML, CSS and JS.
@@ -25,6 +25,7 @@ In this laboratory session, we focused on developing a basic front-end landing p
 ### Technologies Used
 - HTML5
 - CSS3
+- Bootstrap
 
 ### Task Requirements
 1. Design a visually appealing landing page.
@@ -43,6 +44,17 @@ In this laboratory session, we focused on developing a basic front-end landing p
 - Have a decent git history (no one commit)
 - The page with mascot and responsive design should be deployed on a live link
 
+## Dev requirements (lab4)
+
+- Use vanilla CSS and HTML (no frameworks)
+- Have a decent git history (no one commit)
+- The page should be deployed on a free hosting service (example: GitHub Pages, Vercel, Netlify)
+- Project repo should have a README with a short description of the landing page topic, screenshots, and a link to the live demo
+
+
+- The POC should be done during lab class.
+- The POC with CSS framework should be deployed live, for the customer to test it.
+
 
 ## Customer requirements (lab 3)
 
@@ -58,6 +70,12 @@ In this laboratory session, we focused on developing a basic front-end landing p
   - be animated (rotating, tilting, jumping, walking) `1.4 Points`
   - display a welcome/CTA/info message when hovering with the mouse `1 Point`
 
+## Customer requirements (lab 4)
+
+- Some form of navigation to sections (links, buttons)
+- Call to action
+- At least 4 sections ([see examples](https://webflow.com/blog/high-converting-landing-page))
+- Pleasant to the eyes
 
 ## Links
 
@@ -65,6 +83,9 @@ In this laboratory session, we focused on developing a basic front-end landing p
 - https://www.w3schools.com/css/css3_animations.asp
 - https://css-tricks.com/almanac/properties/a/animation/
 
+## Links (lab4)
+
+- https://blog.hubspot.com/website/css-frameworks
 
 ## Getting Started
 
@@ -89,19 +110,7 @@ To view the landing page locally, follow these steps:
 
 Create a web page for your/friends/relatives business (example: car-rent, cookies-shop, crypto-scam)
 
-### Customer requirements
 
-- Some form of navigation to sections (links, buttons)
-- Call to action
-- At least 4 sections ([see examples](https://webflow.com/blog/high-converting-landing-page))
-- Pleasant to the eyes
-
-### Dev requirements
-
-- Use vanilla CSS and HTML (no frameworks)
-- Have a decent git history (no one commit)
-- The page should be deployed on a free hosting service (example: GitHub Pages, Vercel, Netlify)
-- Project repo should have a README with a short description of the landing page topic, screenshots, and a link to the live demo
 
 ### Other requirements:
 
@@ -112,3 +121,4 @@ Create a web page for your/friends/relatives business (example: car-rent, cookie
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
