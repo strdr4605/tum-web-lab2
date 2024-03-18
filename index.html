@@ -10,42 +10,49 @@
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/script.js"></script>
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
 </head>
 
 <body>
 
   <svg id="call" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none">
-    <rect width="75" height="75" rx="37.5" fill="#78C144"/>
-    <path d="M34.6215 34.8068L37.2569 32.3922C37.9775 31.7307 38.484 30.869 38.7114 29.9176C38.9387 28.9662 38.8766 27.9685 38.5329 27.0527L37.409 24.0516C36.9892 22.9313 36.1579 22.0131 35.0847 21.4842C34.0115 20.9554 32.777 20.8556 31.6327 21.2052C27.4219 22.4935 24.1853 26.4073 25.1816 31.0549C25.8367 34.1124 27.0907 37.9502 29.466 42.0334C31.8462 46.1264 34.565 49.1495 36.8962 51.2745C40.415 54.4768 45.4454 53.6768 48.682 50.6586C49.5496 49.8497 50.076 48.7403 50.154 47.5567C50.2319 46.373 49.8556 45.2042 49.1016 44.2884L47.0404 41.7855C46.4187 41.0286 45.5848 40.4751 44.6459 40.1961C43.707 39.9171 42.7061 39.9254 41.772 40.22L38.366 41.2923C37.4865 40.3846 36.7157 39.3774 36.0692 38.2913C35.4453 37.1928 34.9591 36.0217 34.6215 34.8044" fill="white"/>
+    <rect width="75" height="75" rx="37.5" fill="#78C144" />
+    <path
+      d="M34.6215 34.8068L37.2569 32.3922C37.9775 31.7307 38.484 30.869 38.7114 29.9176C38.9387 28.9662 38.8766 27.9685 38.5329 27.0527L37.409 24.0516C36.9892 22.9313 36.1579 22.0131 35.0847 21.4842C34.0115 20.9554 32.777 20.8556 31.6327 21.2052C27.4219 22.4935 24.1853 26.4073 25.1816 31.0549C25.8367 34.1124 27.0907 37.9502 29.466 42.0334C31.8462 46.1264 34.565 49.1495 36.8962 51.2745C40.415 54.4768 45.4454 53.6768 48.682 50.6586C49.5496 49.8497 50.076 48.7403 50.154 47.5567C50.2319 46.373 49.8556 45.2042 49.1016 44.2884L47.0404 41.7855C46.4187 41.0286 45.5848 40.4751 44.6459 40.1961C43.707 39.9171 42.7061 39.9254 41.772 40.22L38.366 41.2923C37.4865 40.3846 36.7157 39.3774 36.0692 38.2913C35.4453 37.1928 34.9591 36.0217 34.6215 34.8044"
+      fill="white" />
   </svg>
 
 
 
-  <img id="mascot" style="display: none;" src="images/mascot.png" alt="Mascot">
-<div id="mascot_text"> Hello, Wellcome</div>
-<div id="topnav_outside">
-  <div class="topnav main" id="myTopnav">
-    <a class="logo" href="#home"> <img id="topnav_logo" src="images/logo.png" alt="UTM FASION"><span class="hide_on_small">UTM</span>&nbsp;<span class="hide_on_small"
-        id="topnav_logo_bold"> FASION</span></a>
-    <a href="#about" class="btn split">SIGN UP</a>
+  <img id="mascot" style="display: none;" src="images/mascot.png" alt="Mascot" loading="lazy">
+  <div id="mascot_text" class="Poppins"> Hello, Wellcome</div>
+  <div id="topnav_outside">
+    <div class="topnav main" id="myTopnav">
+      <a class="logo d-flex align-items-center" href="#home"> <img id="topnav_logo" src="images/logo.png"
+          alt="UTM FASION"><span class="hide_on_small" loading="lazy">UTM</span>&nbsp;<span class="hide_on_small"
+          id="topnav_logo_bold"> FASION</span></a>
+      <a href="#about" class="fasion_btn split Poppins">SIGN UP</a>
 
-    <a href="#news" class="split">News</a>
-    <a href="#contact" class="split" onclick="scroll_top_div('subscribe')">Contact</a>
-    <a href="#news" class="split">CATALOGUE</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <svg style="margin-right:30px; margin-top: 5px;" xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 18 12"
-        fill="none">
-        <path d="M0 12V10H18V12H0ZM0 7V5H18V7H0ZM0 2V0H18V2H0Z" fill="black" />
-      </svg>
-    </a>
+      <a href="#news" class="split">News</a>
+      <a href="#contact" class="split" onclick="scroll_top_div('subscribe')">Contact</a>
+      <a href="#news" class="split">CATALOGUE</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <svg style="margin-right:30px; margin-top: 5px;" xmlns="http://www.w3.org/2000/svg" width="25" height="18"
+          viewBox="0 0 18 12" fill="none">
+          <path d="M0 12V10H18V12H0ZM0 7V5H18V7H0ZM0 2V0H18V2H0Z" fill="black" />
+        </svg>
+      </a>
+    </div>
   </div>
-</div>
 
   </div>
   <div class="main">
-    <div id="hero">
-      <div id="hero_left">
+    <div id="hero" class="Poppins d-flex border-box justify-content-between">
+      <div id="hero_left" class="d-flex">
         <div>
           <div>
             <span> LET'S <br class="br_hide">EXPLORE </span><br class="br_hide">
@@ -54,16 +61,16 @@
           </div>
 
 
-          <div id="hero_small_text">Live for Influential and Innovative fashion!</div>
+          <div id="hero_small_text" class="line-height-normal">Live for Influential and Innovative fashion!</div>
         </div>
 
-        <div class="btn btn_shop">
+        <div class="fasion_btn btn_shop Poppins d-flex">
           Show Now
         </div>
       </div>
 
       <div id="hero_right">
-        <img id="hero_img" src="images/hero_img.png" alt="UTM FASION">
+        <img id="hero_img" src="images/hero_img.png" alt="UTM FASION" loading="lazy">
       </div>
     </div>
   </div>
@@ -71,13 +78,13 @@
 
 
   <div id="companies">
-    <div class="main" id="companies_inside">
-      <img class="companies_logos_img" src="images/versace.png" alt="versace">
-      <img class="companies_logos_img" src="images/disel.png" alt="">
-      <img class="companies_logos_img" src="images/chanell.png" alt="">
-      <img class="companies_logos_img" src="images/levis.png" alt="">
-      <img class="companies_logos_img" src="images/fila.png" alt="">
-      <img class="companies_logos_img" src="images/lee.png" alt="">
+    <div class="main d-flex border-box justify-content-between" id="companies_inside">
+      <img class="companies_logos_img" src="images/versace.png" alt="versace" loading="lazy">
+      <img class="companies_logos_img" src="images/disel.png" alt="" loading="lazy">
+      <img class="companies_logos_img" src="images/chanell.png" alt="" loading="lazy">
+      <img class="companies_logos_img" src="images/levis.png" alt="" loading="lazy">
+      <img class="companies_logos_img" src="images/fila.png" alt="" loading="lazy">
+      <img class="companies_logos_img" src="images/lee.png" alt="" loading="lazy">
 
 
 
@@ -102,17 +109,17 @@
 
     </div>
 
-      <div id="young_inside">
+    <div id="young_inside" class="d-flex justify-content-between">
 
-        <div class="young_card">
-          <img class="young_inside_img" src="images/young_1.png" alt="UTM fashion">
+      <div class="young_card">
+        <img class="young_inside_img" src="images/young_1.png" alt="UTM fashion" loading="lazy">
 
-          <div class="young_card_text">
-            <div class="young_card_text_left">
-              <span class="young_card_text_left_top">Trending on Instagram</span>
-              <span class="young_card_text_left_bottom">Explore Now!</span>
-            </div>
-          
+        <div class="young_card_text d-flex Poppins align-items-center justify-content-between">
+          <div class="young_card_text_left d-flex">
+            <span class="young_card_text_left_top">Trending on Instagram</span>
+            <span class="young_card_text_left_bottom">Explore Now!</span>
+          </div>
+
           <svg style="fill: #000;" width="1em" height="16" viewBox="0 0 34 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -125,86 +132,87 @@
       <div class="young_card">
         <img class="young_inside_img" src="images/young_2.png" alt="UTM fashion">
 
-        <div class="young_card_text">
-          <div class="young_card_text_left">
+        <div class="young_card_text d-flex Poppins align-items-center justify-content-between">
+          <div class="young_card_text_left d-flex">
             <span class="young_card_text_left_top">All Under $40</span>
             <span class="young_card_text_left_bottom">Explore Now!</span>
           </div>
-        
-        <svg style="fill: #000;" width="1em" height="16" viewBox="0 0 34 24" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z">
-          </path>
-        </svg>
+
+          <svg style="fill: #000;" width="1em" height="16" viewBox="0 0 34 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z">
+            </path>
+          </svg>
+        </div>
+
+
       </div>
-    
 
+
+    </div>
+
+
+    <div class="main d-flex justify-content-around align-items-center" id="app">
+
+      <div id="app_left">
+        <div id="app_title" class="Poppins">
+          DOWNLOAD APP &amp;
+          <br>
+          GET THE VOUCHER!
+        </div>
+
+        <p id="app_subtitle" class="Poppins">Get 30% off for first transaction using Rondovision mobile app for now.</p>
+        <div id="app_btns" class="d-flex">
+          <img class="app_btn" src="images/appstore.png" alt="appstore" loading="lazy">
+          <img class="app_btn" src="images/googleplay.png" alt="googleplay" loading="lazy">
+        </div>
+
+      </div>
+      <img id="app_img" src="images/app.png" alt="APP">
+
+    </div>
+
+  </div>
+
+  <div id="subscribe">
+
+    <div class="main d-flex align-items-center" id="subscribe_inside">
+
+
+      <div id="subscribe_text">
+        JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
+      </div>
+      <div id="subscribe_subtext">
+        Type your email down below and be young wild generation
+      </div>
+
+      <form id="subscribe_form" class="d-flex">
+        <input type="email" placeholder="Add your email here" required="" id="subscribe_input"
+          class="Poppins border-box">
+        <button type="submit" class="subscribe_form_btn">Send</button>
+      </form>
     </div>
 
 
   </div>
 
 
-<div class="main" id="app">
 
-  <div id="app_left">
-    <div id="app_title">
-DOWNLOAD APP &amp; 
-        <br> 
-        GET THE VOUCHER!
-    </div>
-
-    <p id="app_subtitle">Get 30% off for first transaction using Rondovision mobile app for now.</p>
- <div id="app_btns">
-  <img class="app_btn" src="images/appstore.png" alt="appstore">
-  <img class="app_btn" src="images/googleplay.png" alt="googleplay">
- </div>
- 
-  </div>
-    <img id="app_img" src="images/app.png" alt="APP">
-  
-</div>
-
-  </div>
-
-<div id="subscribe">
-
-<div class="main" id="subscribe_inside">
-
-
-  <div id="subscribe_text">
-    JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
-  </div>
-  <div id="subscribe_subtext">
-    Type your email down below and be young wild generation
-  </div>
-
-  <form id="subscribe_form">
-    <input  type="email" placeholder="Add your email here" required="" id="subscribe_input">
-    <button type="submit" class="subscribe_form_btn">Send</button>
-  </form>
-</div>
-
-
-</div>
-
-
-
-  <footer>
+  <footer class="border-box">
     <div class="main">
-      <div class="main" id="footer_inside">
+      <div class="main d-flex justify-content-around" id="footer_inside">
 
 
         <div class="footer_div">
 
-          <div id="footer_h1">
+          <div id="footer_h1 Poppins">
             UTM <span id="footer_logo_bold">FASION</span>
           </div>
-          <div id="footer_h2">
+          <div id="footer_h2 Poppins">
             Complete your style with awesome clothes from us.
           </div>
-          <div id="footer_icons">
+          <div id="footer_icons" class="d-flex">
             <svg class="text-2xl fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="1em"
               height="1em">
               <path
@@ -232,7 +240,7 @@ DOWNLOAD APP &amp;
           </div>
         </div>
 
-        <div id="footer_right">
+        <div id="footer_right" class="d-flex justify-content-between">
 
           <div>
             <div class="footer_title">Company</div>
@@ -261,6 +269,17 @@ DOWNLOAD APP &amp;
     </div>
   </footer>
 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
