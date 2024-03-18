@@ -1,14 +1,285 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ADD YOUR CODE HERE -->
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cristian Brinza FAF-212 Lab2</title>
+  <!-- CHANGE THESE VALUES -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+  <svg id="call" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none">
+    <rect width="75" height="75" rx="37.5" fill="#78C144" />
+    <path
+      d="M34.6215 34.8068L37.2569 32.3922C37.9775 31.7307 38.484 30.869 38.7114 29.9176C38.9387 28.9662 38.8766 27.9685 38.5329 27.0527L37.409 24.0516C36.9892 22.9313 36.1579 22.0131 35.0847 21.4842C34.0115 20.9554 32.777 20.8556 31.6327 21.2052C27.4219 22.4935 24.1853 26.4073 25.1816 31.0549C25.8367 34.1124 27.0907 37.9502 29.466 42.0334C31.8462 46.1264 34.565 49.1495 36.8962 51.2745C40.415 54.4768 45.4454 53.6768 48.682 50.6586C49.5496 49.8497 50.076 48.7403 50.154 47.5567C50.2319 46.373 49.8556 45.2042 49.1016 44.2884L47.0404 41.7855C46.4187 41.0286 45.5848 40.4751 44.6459 40.1961C43.707 39.9171 42.7061 39.9254 41.772 40.22L38.366 41.2923C37.4865 40.3846 36.7157 39.3774 36.0692 38.2913C35.4453 37.1928 34.9591 36.0217 34.6215 34.8044"
+      fill="white" />
+  </svg>
+
+
+
+  <img id="mascot" style="display: none;" src="images/mascot.png" alt="Mascot" loading="lazy">
+  <div id="mascot_text" class="Poppins"> Hello, Wellcome</div>
+  <div id="topnav_outside">
+    <div class="topnav main" id="myTopnav">
+      <a class="logo d-flex align-items-center" href="#home"> <img id="topnav_logo" src="images/logo.png"
+          alt="UTM FASION"><span class="hide_on_small" loading="lazy">UTM</span>&nbsp;<span class="hide_on_small"
+          id="topnav_logo_bold"> FASION</span></a>
+      <a href="#about" class="fasion_btn split Poppins">SIGN UP</a>
+
+      <a href="#news" class="split">News</a>
+      <a href="#contact" class="split" onclick="scroll_top_div('subscribe')">Contact</a>
+      <a href="#news" class="split">CATALOGUE</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <svg style="margin-right:30px; margin-top: 5px;" xmlns="http://www.w3.org/2000/svg" width="25" height="18"
+          viewBox="0 0 18 12" fill="none">
+          <path d="M0 12V10H18V12H0ZM0 7V5H18V7H0ZM0 2V0H18V2H0Z" fill="black" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  </div>
+  <div class="main">
+    <div id="hero" class="Poppins d-flex border-box justify-content-between">
+      <div id="hero_left" class="d-flex">
+        <div>
+          <div>
+            <span> LET'S <br class="br_hide">EXPLORE </span><br class="br_hide">
+            <span>UNIQUE</span><br class="br_hide">
+            <span> CLOTHES. </span>
+          </div>
+
+
+          <div id="hero_small_text" class="line-height-normal">Live for Influential and Innovative fashion!</div>
+        </div>
+
+        <div class="fasion_btn btn_shop Poppins d-flex">
+          Show Now
+        </div>
+      </div>
+
+      <div id="hero_right">
+        <img id="hero_img" src="images/hero_img.png" alt="UTM FASION" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="companies">
+    <div class="main d-flex border-box justify-content-between" id="companies_inside">
+      <img class="companies_logos_img" src="images/versace.png" alt="versace" loading="lazy">
+      <img class="companies_logos_img" src="images/disel.png" alt="" loading="lazy">
+      <img class="companies_logos_img" src="images/chanell.png" alt="" loading="lazy">
+      <img class="companies_logos_img" src="images/levis.png" alt="" loading="lazy">
+      <img class="companies_logos_img" src="images/fila.png" alt="" loading="lazy">
+      <img class="companies_logos_img" src="images/lee.png" alt="" loading="lazy">
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="main">
+
+
+    <div id="young_title">
+      Young's Favorite
+      <svg id="young_svg" width="120" height="25" viewBox="0 0 186 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M84 3.97549C65.3333 8.30883 22.4 19.9755 0 31.9755C56.6667 37.3088 173.2 39.1755 186 3.97549C168 0.975492 122.4 -3.22451 84 3.97549Z"
+          fill="#EBD96B"></path>
+      </svg>
+
+    </div>
+
+    <div id="young_inside" class="d-flex justify-content-between">
+
+      <div class="young_card">
+        <img class="young_inside_img" src="images/young_1.png" alt="UTM fashion" loading="lazy">
+
+        <div class="young_card_text d-flex Poppins align-items-center justify-content-between">
+          <div class="young_card_text_left d-flex">
+            <span class="young_card_text_left_top">Trending on Instagram</span>
+            <span class="young_card_text_left_bottom">Explore Now!</span>
+          </div>
+
+          <svg style="fill: #000;" width="1em" height="16" viewBox="0 0 34 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z">
+            </path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="young_card">
+        <img class="young_inside_img" src="images/young_2.png" alt="UTM fashion">
+
+        <div class="young_card_text d-flex Poppins align-items-center justify-content-between">
+          <div class="young_card_text_left d-flex">
+            <span class="young_card_text_left_top">All Under $40</span>
+            <span class="young_card_text_left_bottom">Explore Now!</span>
+          </div>
+
+          <svg style="fill: #000;" width="1em" height="16" viewBox="0 0 34 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM0 13.5L32 13.5V10.5L0 10.5L0 13.5Z">
+            </path>
+          </svg>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+    <div class="main d-flex justify-content-around align-items-center" id="app">
+
+      <div id="app_left">
+        <div id="app_title" class="Poppins">
+          DOWNLOAD APP &amp;
+          <br>
+          GET THE VOUCHER!
+        </div>
+
+        <p id="app_subtitle" class="Poppins">Get 30% off for first transaction using Rondovision mobile app for now.</p>
+        <div id="app_btns" class="d-flex">
+          <img class="app_btn" src="images/appstore.png" alt="appstore" loading="lazy">
+          <img class="app_btn" src="images/googleplay.png" alt="googleplay" loading="lazy">
+        </div>
+
+      </div>
+      <img id="app_img" src="images/app.png" alt="APP">
+
+    </div>
+
+  </div>
+
+  <div id="subscribe">
+
+    <div class="main d-flex align-items-center" id="subscribe_inside">
+
+
+      <div id="subscribe_text">
+        JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
+      </div>
+      <div id="subscribe_subtext">
+        Type your email down below and be young wild generation
+      </div>
+
+      <form id="subscribe_form" class="d-flex">
+        <input type="email" placeholder="Add your email here" required="" id="subscribe_input"
+          class="Poppins border-box">
+        <button type="submit" class="subscribe_form_btn">Send</button>
+      </form>
+    </div>
+
+
+  </div>
+
+
+
+  <footer class="border-box">
+    <div class="main">
+      <div class="main d-flex justify-content-around" id="footer_inside">
+
+
+        <div class="footer_div">
+
+          <div id="footer_h1 Poppins">
+            UTM <span id="footer_logo_bold">FASION</span>
+          </div>
+          <div id="footer_h2 Poppins">
+            Complete your style with awesome clothes from us.
+          </div>
+          <div id="footer_icons" class="d-flex">
+            <svg class="text-2xl fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="1em"
+              height="1em">
+              <path
+                d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z">
+              </path>
+            </svg>
+            <svg class="text-2xl fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="1em"
+              height="1em">
+              <path
+                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+              </path>
+            </svg>
+            <svg class="text-2xl fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="1em"
+              height="1em">
+              <path
+                d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z">
+              </path>
+            </svg>
+            <svg class="text-2xl fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="1em"
+              height="1em">
+              <path
+                d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+        <div id="footer_right" class="d-flex justify-content-between">
+
+          <div>
+            <div class="footer_title">Company</div>
+            <div>About</div>
+            <div>Contact us</div>
+            <div>Support</div>
+            <div>Careers</div>
+
+          </div>
+          <div>
+            <div class="footer_title">Quick Link</div>
+            <div>Share Location</div>
+            <div>Orders Tracking</div>
+            <div>Size Guide</div>
+            <div>FAQs</div>
+
+          </div>
+          <div>
+            <div class="footer_title">Legal</div>
+            <div>Terms & conditions</div>
+            <div>Privacy Policy</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
