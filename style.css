@@ -296,3 +296,80 @@
 .faq-toggle:checked + .faq-question + .faq-answer {
     display: block;
 }
+
+/* Contact Information and Support */
+
+#contact {
+    background: #f8f9fa;
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #0077ff;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.contact-method {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contact-method h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #0077ff;
+}
+
+.contact-method p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: white;
+    background: #0077ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #005ecc;
+}
