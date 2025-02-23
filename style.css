@@ -7,13 +7,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #333; /* Dark text for readability */
+    color: #333;
 }
 
 .container {
     max-width: 800px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Soft white background */
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -21,7 +21,7 @@
 .hero-title {
     font-size: 3rem;
     font-weight: bold;
-    color: #222; /* Darker text for contrast */
+    color: #222;
 }
 
 .hero-subtitle {
@@ -36,7 +36,7 @@
     padding: 12px 24px;
     font-size: 1.2rem;
     color: white;
-    background: #0077ff; /* Bright, eye-catching blue */
+    background: #0077ff;
     text-decoration: none;
     border-radius: 5px;
     transition: 0.3s;
@@ -49,7 +49,7 @@
 /* UNIQUE VALUE PROPOSITION */
 
 #value-proposition {
-    background: #f8f9fa; /* Light neutral background */
+    background: #f8f9fa;
     color: #333;
     padding: 60px 20px;
     text-align: center;
@@ -107,4 +107,63 @@
 .feature p {
     font-size: 1rem;
     color: #555;
+}
+
+/* CALL TO ACTION */
+
+#cta {
+    background: #A2D9FF;
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#cta .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-buttons .btn {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #56C1E1;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #39A6B3; 
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 2px solid #56C1E1;
+    color: #56C1E1;
+}
+
+.secondary-btn:hover {
+    background: #56C1E1;
+    color: white;
 }
