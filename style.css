@@ -167,3 +167,66 @@
     background: #56C1E1;
     color: white;
 }
+
+/* SOCIAL PROOF */
+
+#social-proof {
+    background: #f8f9fa;
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#social-proof .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#social-proof h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #0077ff;
+}
+
+#social-proof p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial blockquote {
+    font-size: 1.1rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial .author {
+    font-size: 1rem;
+    color: #0077ff; 
+    font-weight: bold;
+}
+
