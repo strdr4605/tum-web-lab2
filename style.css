@@ -1,1 +1,85 @@
-/* add your CSS here */
+/* general styles */
+body {
+    font-family: Georgia, serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* header styles */
+header {
+    background-color: #f8f8f8;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #555;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+nav ul li a:hover {
+    color: #777;
+}
+
+/* hero styles */
+#hero {
+    background-color: #e0e0e0;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #444;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #363636;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}
