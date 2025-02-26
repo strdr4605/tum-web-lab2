@@ -10,8 +10,6 @@ body {
 }
 
 header {
-    background: #6f4e37;
-    color: white;
     padding: 30px 20px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -27,44 +25,68 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     transition: color 0.3s ease;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 nav ul li a:hover {
     color: #ffcc00;
 }
-.cta-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 25px;
-    background: #ffcc00;
-    color: #3e2723;
-    text-decoration: none;
+
+#home img {
+    width: 1522px;
+    height: 800px;
+}
+.home-content{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    margin-top: 18vh;
+    margin-left: 25vw;
+    color: #f8f1e5;
+}
+.home-content h1 {
+    font-size: 70px;
+    text-align: left;
+}
+.home-content h2 {
+    font-size: 30px;
+    width: 70%;
+    text-align: left;
+}
+
+.home-content button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: #006241;
+    color: white;
+    border: none;
+    cursor: pointer;
     font-weight: bold;
-    border-radius: 8px;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 530px;
+    margin-top: 35px;
 }
 
-.cta-button:hover {
-    background: #ffaa00;
+/* Hover Effect */
+.home-content button:hover {
+    background-color: #ffcc00;
+    color: #3e2723;
+    transform: scale(1.1); /* Slightly enlarges the button */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-section {
-    padding: 60px 20px;
-    background: white;
-    margin: 30px auto;
-    width: 80%;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-ul {
-    list-style: none;
-    padding: 0;
+/* Click Effect */
+.home-content button:active {
+    transform: scale(0.95); /* Slightly shrinks the button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer {
