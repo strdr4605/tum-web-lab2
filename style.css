@@ -37,4 +37,40 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffcc00;
 }
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #ffcc00;
+    color: #3e2723;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
 
+.cta-button:hover {
+    background: #ffaa00;
+}
+
+section {
+    padding: 60px 20px;
+    background: white;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background: #6f4e37;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
