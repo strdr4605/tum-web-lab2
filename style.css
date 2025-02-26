@@ -1,4 +1,7 @@
 /* add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -89,6 +92,46 @@ nav ul li a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.title h1 {
+    font-family: Caladea;
+    font-weight: 800;
+    text-align: left;
+    font-size: 40px;
+    margin: 70px;
+    margin-left: 190px;
+}
+
+.coffee-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+}
+.coffee-content ul li {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    font-family: Montserrat;
+}
+.coffee-content ul li h2,h3 {
+    text-align: left;
+    width: 300px;
+    margin-top: 20px;
+}
+.coffee-content ul li h3 {
+    font-weight: 800;
+}
+.coffee-content ul li h1 {
+    font-weight: 700;
+}
+.coffee-content ul li img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
 footer {
     background: #6f4e37;
     color: white;
