@@ -132,6 +132,83 @@ nav ul li a:hover {
     height: 300px;
     border-radius: 20px;
 }
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 150px auto;
+}
+
+
+.timeline h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: left;
+    font-size: 40px;
+    margin-left: 190px;
+    margin-bottom: 100px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  text-align: left;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ffcc00;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  right: 80px;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+
 footer {
     background: #6f4e37;
     color: white;
