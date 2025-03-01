@@ -64,6 +64,7 @@ nav ul li a:hover {
 }
 
 .home-content button {
+    text-decoration: none;
     padding: 15px 30px;
     font-size: 20px;
     border-radius: 30px;
@@ -206,6 +207,45 @@ nav ul li a:hover {
   background-color: white;
   position: relative;
   border-radius: 6px;
+}
+
+.contact {
+    margin-bottom: 100px;
+}
+
+.contact h1 {
+    font-family: Caladea;
+    font-weight: 800;
+    text-align: left;
+    font-size: 40px;
+    margin: 70px;
+    margin-left: 190px;
+}
+
+.contact h2 {
+    text-align: left;
+    width: 1200px;
+    margin-top: 20px;
+    margin-left: 200px;
+    font-family: Montserrat;
+    font-size: 25px;
+}
+.contact h3 {
+    text-align: left;
+    width: 1200px;
+    margin-top: 20px;
+    margin-left: 200px;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.email,.phone {
+    font-family: Caladea;
+    font-weight: 800;
+    text-align: left;
+    font-size: 25px;
+    margin: 70px;
+    margin-left: 190px;
 }
 
 
