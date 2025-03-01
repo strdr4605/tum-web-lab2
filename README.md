@@ -30,13 +30,13 @@ For this laboratory project, I created a landing page for a fictional coffee sho
 - **Navigation Bar**: The navigation bar is fixed at the top of the page, allowing users to quickly access different sections of the website. It contains links to Home, Products, History, and Contact sections, ensuring smooth navigation. The design is simple, clean, and intuitive, providing an excellent user experience.
 ![navbar](assets/ss00.png)
 - **Home section**: This section serves as an introduction to the coffee shop, its values, and its offerings. It presents a welcoming message along with visually appealing elements that capture the essence of the brand. Visitors can get a sense of the ambiance and the premium quality coffee products offered.
-![navbar](assets/ss01.png)
+![Home](assets/ss1.png)
 - **Product section**: The product section highlights some of the best offerings available at the coffee shop. It includes detailed descriptions of different coffee blends, pastries, and other items available for purchase. High-quality images are displayed alongside product details to entice customers and encourage them to explore further.
-![hero](assets/SS02.png)
+![Product](assets/SS2.png)
 - **History section**: This section provides insight into the journey of the coffee shop, including its origins, growth, and milestones achieved over the years. It may feature historical photographs, timelines, and interesting anecdotes about the shop’s establishment and evolution.
-![value proposition](assets/ss03.png)
+![History](assets/ss3.png)
 - **Contact section**: The contact section contains information on how customers can reach the coffee shop. This includes a physical address, phone number, email, and social media links. A contact form may also be provided, allowing users to send inquiries directly from the website.
-![call to action](assets/ss04.png)
+![Contact](assets/ss4.png)
 
 ### Conclusion 
 
