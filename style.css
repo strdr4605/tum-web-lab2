@@ -23,3 +23,20 @@
 .bg-image__makeup {
   background: url(/images/makeup.jpg) no-repeat center center/cover;
 }
+
+body {
+  font-family: "Vela Sans";
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
