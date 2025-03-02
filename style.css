@@ -40,3 +40,40 @@ h6 {
   font-size: 1.25rem;
   font-weight: 400;
 }
+
+.button {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.button--white {
+  color: white;
+  border-color: white;
+}
+
+.button--white:hover {
+  color: black;
+  background-color: white;
+}
+
+.button--black:hover {
+  color: white;
+  background-color: black;
+}
+
+.button--white:active {
+  color: white;
+  border-color: transparent;
+}
+
+.button--black:active {
+  color: black;
+  background-color: transparent;
+}
+
+.icon-button {
+  width: min-content;
+}
