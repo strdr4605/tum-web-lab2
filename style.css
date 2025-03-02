@@ -1,1 +1,70 @@
-/* add your CSS here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    scroll-behavior: smooth;
+}
+header {
+    background: #333;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+.hero {
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?doors') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero h1 {
+    font-size: 3em;
+}
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+.btn {
+    background: #ff6600;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: #cc5500;
+}
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+.about, .products, .contact {
+    background: #f4f4f4;
+}
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
