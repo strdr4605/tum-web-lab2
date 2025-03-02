@@ -7,3 +7,19 @@
   font-family: "Vela Sans";
   src: url(./assets/fonts/VelaSans-GX.ttf) format("truetype");
 }
+
+.bg-image__texture-logo {
+  background: url(/images/bg_logo_texture.jpg) no-repeat center center/cover;
+}
+
+.bg-image__hair {
+  background: url(/images/hair_treatment.jpg) no-repeat center center/cover;
+}
+
+.bg-image__skincare {
+  background: url(/images/applying_cream.jpg) no-repeat center center/cover;
+}
+
+.bg-image__makeup {
+  background: url(/images/makeup.jpg) no-repeat center center/cover;
+}
