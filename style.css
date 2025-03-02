@@ -1,1 +1,9 @@
-/* add your CSS here */
+@font-face {
+  font-family: "Monarque";
+  src: url(./assets/fonts/Monarque-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Vela Sans";
+  src: url(./assets/fonts/VelaSans-GX.ttf) format("truetype");
+}
