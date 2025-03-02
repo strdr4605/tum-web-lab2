@@ -77,3 +77,39 @@ h6 {
 .icon-button {
   width: min-content;
 }
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(12, 90px);
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.section__title {
+  grid-column: 1 / span 12;
+  font-family: "Monarque";
+  font-weight: 300;
+  text-align: center;
+}
+
+.section__subtitle {
+  grid-column: 1 / span 12;
+  font-size: 1.125rem;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.section__name {
+  grid-column: 1 / span 12;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.section__button-wrapper {
+  grid-column: 1 / span 12;
+  display: flex;
+  justify-content: center;
+}
