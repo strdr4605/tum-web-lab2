@@ -68,3 +68,13 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+.hero {
+    height: 100vh;
+    background: url('https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25650946/Feather_River_Door.jpg?quality=90&strip=all&crop=0,16.666666666667,100,66.666666666667&_gl=1*bt4r8o*_ga*MTI3NTk5NDM0NS4xNzQwOTE4Nzc2*_ga_9GXHZT6RVE*MTc0MDkxODc3NS4xLjAuMTc0MDkxODc3OC41Ny4wLjA.') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
