@@ -6,7 +6,7 @@ So they think adding a CSS library/framework will make the development more rapi
 ## Customer requirements
 
 - Make a POC (Proof of Concept) of a CSS framework integration into the landing page from the last labs.
-- Choose any of the modern CSS frameworks (for example: Bootstrap, TailwindCSS, SemanticUI, ...) and change 2 sections of the landing page:
+- Choose any of the modern CSS frameworks (for example: UnoCSS, Bulma, Bootstrap, SemanticUI, TailwindCSS, ...) and change 2 sections of the landing page:
   - Use layout class helpers (for example: display in columns/rows, hide elements, ...)
   - Use some colors and styles from the CSS framework (for example: Background colors, Hover colors, ...)
  
