@@ -2,6 +2,8 @@
 
 Create a web page for your/friends/relatives business (example: car-rent, cookies-shop, crypto-scam)
 
+> For a maximal grade, the website should be for a real client (your/friends/relatives business), otherwise -1-2 points
+
 ## Customer requirements
 
 - Some form of navigation to sections (links, buttons)
