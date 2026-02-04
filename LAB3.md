@@ -18,9 +18,14 @@ Improve your already amazing landing page
  
 ## Dev requirements
 
-- Use vanilla CSS and HTML (no frameworks)
 - Have a decent git history (no one commit)
 - The page with mascot and responsive design should be deployed on a live link
+- Migrate part or full website to a CSS framework `1 Point`
+  - [TailwindCSS](https://tailwindcss.com/)
+  - [Bootstrap](https://getbootstrap.com/)
+  - [Bulma](https://bulma.io/)
+  - [PicoCSS](https://picocss.com/)
+  - [UnoCSS](https://unocss.dev/)
 
 ## Links
 
