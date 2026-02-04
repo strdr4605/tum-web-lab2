@@ -1,20 +1,34 @@
-# Lab 4 - CSS Libraries/Frameworks
+# Lab 4 - Static Site Generator & Git CMS
 
-The client wants to simplify and streamline the process of styling and designing their landing page. 
-So they think adding a CSS library/framework will make the development more rapid and consistent.
+The client wants to modernize the landing page infrastructure for better content management and developer experience.
 
 ## Customer requirements
 
-- Make a POC (Proof of Concept) of a CSS framework integration into the landing page from the last labs.
-- Choose any of the modern CSS frameworks (for example: UnoCSS, Bulma, Bootstrap, SemanticUI, TailwindCSS, ...) and change 2 sections of the landing page:
-  - Use layout class helpers (for example: display in columns/rows, hide elements, ...)
-  - Use some colors and styles from the CSS framework (for example: Background colors, Hover colors, ...)
- 
+- Migrate landing page to a Static Site Generator (SSG)
+- Integrate a Git-based CMS for content editing
+- Ensure CSS framework from Lab 3 is properly integrated
+
 ## Dev requirements
 
-- The POC should be done during lab class.
-- The POC with CSS framework should be deployed live, for the customer to test it.
+- Choose any SSG (no frontend frameworks like React/Vue required):
+  - [Astro](https://astro.build/)
+  - [Hugo](https://gohugo.io/)
+  - [11ty (Eleventy)](https://www.11ty.dev/)
+  - [Jekyll](https://jekyllrb.com/)
+
+- Choose any free Git-based CMS:
+  - [TinaCMS](https://tina.io/)
+  - [Decap CMS](https://decapcms.org/)
+  - [Front Matter CMS](https://frontmatter.codes/) (VS Code extension)
+  - [Sveltia CMS](https://github.com/sveltia/sveltia-cms)
+  - [Keystatic](https://keystatic.com/)
+
+- As much content as possible should be editable via the CMS
+- The site should be deployed live
+- Have a decent git history
 
 ## Links
 
-- https://blog.hubspot.com/website/css-frameworks
+- https://www.cloudflare.com/learning/performance/static-site-generator/
+- https://jamstack.org/generators/
+- https://jamstack.org/headless-cms/
