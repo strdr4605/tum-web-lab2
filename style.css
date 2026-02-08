@@ -1,1 +1,190 @@
-/* add your CSS here */
+:root{
+  --bg:#0b0d12;
+  --card:#121623;
+  --text:#e9eefc;
+  --muted:#a8b0c6;
+  --accent:#5b5cff;
+  --radius:16px;
+}
+
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.header{
+  position: sticky;
+  top: 0;
+  background: rgba(11,13,18,.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.nav{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+.logo span {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+
+
+.nav-links{
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav-links a{
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover{ color: var(--text); }
+
+.nav-cta{
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(91,92,255,.15);
+  color: var(--text) !important;
+  border: 1px solid rgba(91,92,255,.35);
+}
+
+.hero{
+  padding: 80px 20px;
+}
+
+.hero-content{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px;
+  border-radius: var(--radius);
+  background: radial-gradient(800px 300px at 20% 10%, rgba(91,92,255,.35), transparent),
+  radial-gradient(600px 260px at 80% 30%, rgba(255,255,255,.08), transparent),
+  var(--card);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.hero h1{
+  font-size: clamp(32px, 4vw, 54px);
+  line-height: 1.05;
+  margin-bottom: 14px;
+}
+
+.hero p{
+  color: var(--muted);
+  max-width: 60ch;
+  margin-bottom: 22px;
+}
+
+.hero-actions{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.section{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+
+.section.alt{
+  background: rgba(255,255,255,.02);
+  border-top: 1px solid rgba(255,255,255,.06);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.section h2{
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.card{
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.card h3{ margin-bottom: 8px; }
+.card p{ color: var(--muted); }
+
+.btn{
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.btn.primary{
+  background: var(--accent);
+  color: white;
+  border-color: rgba(91,92,255,.65);
+}
+
+.btn.secondary{
+  background: transparent;
+  color: var(--text);
+}
+
+.form{
+  display: grid;
+  gap: 12px;
+  max-width: 520px;
+}
+
+input, textarea{
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.03);
+  color: var(--text);
+}
+
+.footer{
+  padding: 30px 20px;
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .grid{ grid-template-columns: 1fr; }
+  .hero-content{ padding: 28px; }
+}

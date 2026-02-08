@@ -3,12 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>My landing page</title>
     <!-- CHANGE THESE VALUES -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- ADD YOUR CODE HERE -->
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="#home">
+        <img src="logo.png" alt="ISSA Chains">
+        <span>ISSA Chains</span>
+      </a>
+
+
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact" class="nav-cta">Book now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>If it doesn't make money, it don't make sense</h1>
+        <p>When you rich like this, you don't check the forecast, Every day it's gon rain</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Get a free quote</a>
+          <a class="btn secondary" href="#services">See services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Custom Jewelry Design</h3>
+          <p>One-of-a-kind pieces crafted to match your vision, from concept to final polish.</p>
+        </div>
+        <div class="card">
+          <h3>Luxury Chains & Pendants</h3>
+          <p>Premium gold and silver chains, iced pendants, and statement pieces.</p>
+        </div>
+        <div class="card">
+          <h3>Private Consultations</h3>
+          <p>Book a personal session to choose, customize, or upgrade your jewelry.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <h2>Why choose us</h2>
+      <div class="grid">
+        <div class="card"><h3>Fast</h3><p>Explain benefit.</p></div>
+        <div class="card"><h3>Trusted</h3><p>Explain benefit.</p></div>
+        <div class="card"><h3>Quality</h3><p>Explain benefit.</p></div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <h2>Reviews</h2>
+      <div class="grid">
+        <div class="card"><p>“Amazing service!”</p><strong>— Alex</strong></div>
+        <div class="card"><p>“Super fast and clean.”</p><strong>— Maria</strong></div>
+        <div class="card"><p>“Best in town.”</p><strong>— Andrei</strong></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <h2>Contact</h2>
+      <form class="form">
+        <label>
+          Name
+          <input type="text" placeholder="Your name" required>
+        </label>
+        <label>
+          Phone / Email
+          <input type="text" placeholder="+373..." required>
+        </label>
+        <label>
+          Message
+          <textarea placeholder="What do you need?" rows="4"></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 ISSA Chains. All rights reserved.</p>
+  </footer>
   </body>
+
 </html>
